@@ -1,0 +1,28 @@
+内核版本是3.0.35
+编译器arm-fsl-linux-gnueabi-gcc
+平台：飞思卡尔IMX6
+
+使用方法：
+1.安装驱动virtual_ts.ko文件，生成2个设备文件：
+"/dev/virtual_tp"：触摸屏的源数据输入文件节点
+“/dev/input/event2"：触摸屏的设备文件节点,QT可以通过该设备文件接收触摸点的坐标。
+
+2.将获取到触摸数据写入"/dev/virtual_tp",就相当于点击触摸屏一样的效果。
+
+3.数据格式,按下写入：”X,Y,1"，抬起写入：“X,Y,0".
+X:unsigned short 类型；
+Y:unsigned short 类型；
+1，0 ：int 类型
+
+如下：
+struct point {
+	unsigned short x;
+	unsigned short y;
+	unsigned int	pendown;
+}
+
+
+测试程序请参考我的应用程序（已经用真实的触摸屏作为源数据，测试通过，可以实现单点滑动
+与点动）
+
+2017-3-6

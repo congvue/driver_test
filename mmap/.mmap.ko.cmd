@@ -1,0 +1,1 @@
+cmd_/home/wangyuanfei/data/driver_perchery/mmap/mmap.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/wangyuanfei/data/driver_perchery/mmap/mmap.ko /home/wangyuanfei/data/driver_perchery/mmap/mmap.o /home/wangyuanfei/data/driver_perchery/mmap/mmap.mod.o

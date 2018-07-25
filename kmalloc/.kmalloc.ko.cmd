@@ -1,0 +1,1 @@
+cmd_/home/wangyuanfei/data/driver_perchery/kmalloc/kmalloc.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/wangyuanfei/data/driver_perchery/kmalloc/kmalloc.ko /home/wangyuanfei/data/driver_perchery/kmalloc/kmalloc.o /home/wangyuanfei/data/driver_perchery/kmalloc/kmalloc.mod.o

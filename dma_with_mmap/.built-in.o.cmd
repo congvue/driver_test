@@ -1,0 +1,1 @@
+cmd_/home/percherry/Public/wangyuanfei/data/driver/driver_percherry/dma_with_mmap/built-in.o :=  rm -f /home/percherry/Public/wangyuanfei/data/driver/driver_percherry/dma_with_mmap/built-in.o; arm-linux-gnueabihf-ar rcsD /home/percherry/Public/wangyuanfei/data/driver/driver_percherry/dma_with_mmap/built-in.o

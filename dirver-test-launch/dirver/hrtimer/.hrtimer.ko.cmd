@@ -1,0 +1,1 @@
+cmd_/home/wangyf/data/driver/hrtimer/hrtimer.ko := arm-none-linux-gnueabi-ld -EL -r  -T /home/wangyf/work/linux-3.0.35/scripts/module-common.lds --build-id  -o /home/wangyf/data/driver/hrtimer/hrtimer.ko /home/wangyf/data/driver/hrtimer/hrtimer.o /home/wangyf/data/driver/hrtimer/hrtimer.mod.o

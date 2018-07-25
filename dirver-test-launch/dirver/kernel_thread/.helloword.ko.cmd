@@ -1,0 +1,1 @@
+cmd_/home/wangyf/data/driver/kernel_thread/helloword.ko := arm-none-linux-gnueabi-ld -EL -r  -T /home/wangyf/work/new_linux3.0.35/linux-3.0.35/scripts/module-common.lds --build-id  -o /home/wangyf/data/driver/kernel_thread/helloword.ko /home/wangyf/data/driver/kernel_thread/helloword.o /home/wangyf/data/driver/kernel_thread/helloword.mod.o

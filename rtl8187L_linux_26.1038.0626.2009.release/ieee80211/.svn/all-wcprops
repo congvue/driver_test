@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/rtl8187L/!svn/ver/4/trunk/ieee80211
+END
+ieee80211_crypt_wep.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/rtl8187L/!svn/ver/1/trunk/ieee80211/ieee80211_crypt_wep.c
+END
+license
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/rtl8187L/!svn/ver/1/trunk/ieee80211/license
+END
+ieee80211_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/rtl8187L/!svn/ver/1/trunk/ieee80211/ieee80211_module.c
+END
+ieee80211.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/rtl8187L/!svn/ver/2/trunk/ieee80211/ieee80211.h
+END
+ieee80211_crypt_tkip.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/rtl8187L/!svn/ver/1/trunk/ieee80211/ieee80211_crypt_tkip.c
+END
+readme
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/rtl8187L/!svn/ver/1/trunk/ieee80211/readme
+END
+ieee80211_rx.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/rtl8187L/!svn/ver/1/trunk/ieee80211/ieee80211_rx.c
+END
+ieee80211_tx.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/rtl8187L/!svn/ver/1/trunk/ieee80211/ieee80211_tx.c
+END
+ieee80211_softmac.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/rtl8187L/!svn/ver/2/trunk/ieee80211/ieee80211_softmac.c
+END
+ieee80211_wx.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/rtl8187L/!svn/ver/2/trunk/ieee80211/ieee80211_wx.c
+END
+ieee80211_crypt.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/rtl8187L/!svn/ver/1/trunk/ieee80211/ieee80211_crypt.c
+END
+ieee80211_crypt_ccmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/rtl8187L/!svn/ver/1/trunk/ieee80211/ieee80211_crypt_ccmp.c
+END
+ieee80211_crypt.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/rtl8187L/!svn/ver/1/trunk/ieee80211/ieee80211_crypt.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/rtl8187L/!svn/ver/4/trunk/ieee80211/Makefile
+END
+ieee80211_softmac_wx.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/rtl8187L/!svn/ver/1/trunk/ieee80211/ieee80211_softmac_wx.c
+END

@@ -1,0 +1,49 @@
+NIC_SELECT = RTL8187L
+
+CC = gcc
+KVER  := $(shell uname -r)
+MODDESTDIR := /lib/modules/$(KVER)/kernel/drivers/net/wireless/$(NIC_SELECT)
+
+#EXTRA_CFLAGS += -DCONFIG_IEEE80211_NOWEP=y
+#EXTRA_CFLAGS += -DCONFIG_RTL8180_IOMAP
+EXTRA_CFLAGS += -I$(TOPDIR)/drivers/net/wireless
+EXTRA_CFLAGS += -std=gnu89
+EXTRA_CFLAGS += -O2
+EXTRA_CFLAGS += -mhard-float -DCONFIG_FORCE_HARD_FLOAT=y
+EXTRA_CFLAGS += -DPOLLING_METHOD_FOR_RADIO
+EXTRA_CFLAGS += -DCONFIG_PM
+EXTRA_CFLAGS += -DCONFIG_BIG_DATA_NOSCAN
+EXTRA_CFLAGS += -DLED
+#EXTRA_CFLAGS += -DLED_SHIN
+EXTRA_CFLAGS += -DRATE_ADAPTIVE
+EXTRA_CFLAGS += -DDIG
+EXTRA_CFLAGS += -DSW_ANTE_DIVERSITY
+
+rtl8187-objs := r8187_core.o r8180_93cx6.o r8180_wx.o r8180_rtl8225.o r8180_rtl8225z2.o r8187_led.o r8180_pm.o r8180_dm.o
+
+
+obj-m := rtl8187.o
+
+
+KSRC := /lib/modules/$(KVER)/build
+KVER  := $(shell uname -r)
+KSRC := /lib/modules/$(KVER)/build
+PWD = $(shell pwd)
+INSTALL_PREFIX :=
+
+all: modules
+
+modules:
+	$(MAKE) -C $(KSRC) M=$(PWD) CC=$(CC) modules
+
+install: modules
+	install -p -m 644 rtl8187.ko $(MODDESTDIR)
+	depmod -a
+
+uninstall:
+	$(shell [ -d $(MODDESTDIR) ] && rm -fr $(MODDESTDIR))
+	depmod -a
+clean:
+	rm -fr *.mod.c *.mod *.o .*.cmd *.ko *~
+	rm -fr .tmp_versions
+	rm -fr Module.symvers

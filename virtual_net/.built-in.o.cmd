@@ -1,0 +1,1 @@
+cmd_/home/pjl/Public/wangyuanfei/data/driver_perchery/virtual_net/built-in.o :=  rm -f /home/pjl/Public/wangyuanfei/data/driver_perchery/virtual_net/built-in.o; arm-fsl-linux-gnueabi-ar rcsD /home/pjl/Public/wangyuanfei/data/driver_perchery/virtual_net/built-in.o

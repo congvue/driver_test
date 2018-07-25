@@ -1,0 +1,3681 @@
+﻿root@imx6sxsabresd:~# lll
+-sh: lll: command not found
+root@imx6sxsabresd:~# 
+
+U-Boot 2014.04 (Nov 17 2015 - 16:22:40)
+
+CPU:   Freescale i.MX6SX rev1.2 at 792 MHz
+CPU:   Temperature 32 C, calibration data: 0x59c50269
+Reset cause: POR
+Board: MX6SX SABRE SDB
+I2C:   ready
+DRAM:  1 GiB
+$$$$$$$$$$$$$$$$  Line:895   Fun:board_init
+force_idle_bus: sda=0 scl=0 sda.gp=0x3 scl.gp=0x2
+force_idle_bus: failed to clear bus, sda=1 scl=0
+$$$$$$$$$$$$$$$$  Line:0  fec_id = 614 , Fun:setup_fec
+$$$$$$$$$$$$$$$$  Line:271   Fun:board_qspi_init
+MMC:   $$$$$$$$$$$$$$$$  Line:354   Fun:board_mmc_init
+FSL_SDHC: 0, FSL_SDHC: 1, FSL_SDHC: 2
+*** Warning - bad CRC, using default environment
+
+Display: Hannstar-XGA (1024x768)
+Video: 1024x768x18
+gis input --- No input
+In:    serial
+Out:   serial
+Err:   serial
+Found PFUZE200! deviceid 0x1, revid 0x21
+$$$$$$$$$$$$$$$$  devno = 2, Line:418   Fun:board_late_mmc_init
+$$$$$$$$$$$$ Line:432, Fun:board_late_mmc_init , cmd = mmc dev 2
+mmc2 is current device
+Net:   $$$$$$$$$$$$$$ Line:482  Fun:phy_init  
+$$$$$$$$$$$$$$ Line:76  Fun:phy_atheros_init  
+$$$$$$$$$$$$Register the driver name is [AR8031/AR8033] 
+$$$$$$$$$$$$$$$$  Line:596   Fun:board_eth_init
+$$$$$$$$$$$$$$ Line:1081  Fun:fec_get_miibus  
+$$$$$$$$$$$$$$ Line:897  Fun:fec_set_dev_name  
+$$$$$$$$$$$$$$ Line:137  Fun:fec_mii_setspeed  
+$$$$$$$$$$$$$$ Line:1123  Fun:fecmxc_initialize_multi dev_id = 0 
+$$$$$$$$$$$$$ begin to find phy  phy_id = 0x 2, Line:1128 , Fun:fecmxc_initialize_multi  
+
+$$$$$$$$$$$$$$phy_mask = 0x 4  Line:841  Fun:phy_find_by_mask 
+$$$$$$$$$$$$$$ phy_mask = 0x 4, interface = 6 , Line:713  Fun:get_phy_device_by_mask  
+$$$$$$$$$$$$$$ phy_mask = 0x 4, Line:692  Fun:search_for_existing_phy
+
+ $$$$$$$$$$addr = 0x 2 
+$$$$$$$$$$$$$$ Line:701  Fun:search_for_existing_phy
+$$$$$$$$$$$$$$ Line:717  Fun:get_phy_device_by_mask  
+
+$$$$$$LIne:722 ,Func:get_phy_device_by_mask not find the exist phydev
+
+$$$$$$$$$$$$$$ phy_mask = 0x 4, Line:669  Fun:create_phy_by_mask
+
+$$$$$$$$$$$$$$DDD addr = 2 ,Line:672  Fun:create_phy_by_mask  
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:02 val:0x4d
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:03 val:0xd074
+$$$$$$$$$LIne:659, Fun:get_phy_id,  phy_id =  0x4dd074
+
+ $$$$$$$$$$$$ r = 0,phy_id = 0x4dd074, devad = -1 Line:674, Fun:create_phy_by_mask 
+
+$$$$$$$$$$$$$$$$ Line:679 , Fun:create_phy_by_mask
+
+ $$$$$$$$$$$$$$ INTERFACE = 6
+
+ $$$$$$$$$$$$$$ phy_id  = 0x4dd074
+
+ $$$$$$$$$$$$$$ addr = 0x 2
+$$$$$$$$$$$$$$ Line:605  Fun:phy_device_create
+
+$$$$$$$$$$$$$$ Line:571  Fun:get_phy_driver
+
+$$$$$$$$$$$$$$ mmd = 0, advertising = 767, Line:541  Fun:phy_probe
+$$$$$$$$$$$$$$ Line:993  Fun:fec_probe  
+$$$$$$$$$$$$$$ Line:907  Fun:fec_alloc_descs  
+$$$$$$$$$$$$$$ Line:413  Fun:fec_reg_setup  
+$$$$$$$$$$$$$$ Line:897  Fun:fec_set_dev_name  
+$$$$$$$$$$$$$$ Line:137  Fun:fec_mii_setspeed  
+
+$$$$$$$$$$$$$$ Line:1046        Fun:fec_probe
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:00 val:0x3100
+$$$$$$$$$$$$$$ Line:776  Fun:phy_reset  reg = 0x3100
+$$$$$$$$$$$$$$ Line:153  Fun:fec_mdio_write  
+$$$$$$$$$$$$$$  ddddd Line:180  Fun:fec_mdio_write: phy: 02 reg:00 val:0xb100
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:00 val:0x3100
+$$$$$$$$$$$$$$ Line:800  Fun:phy_reset  reg = 0x3100
+$$$$$$$$$$$$$$ Line:857  Fun:phy_connect_dev  
+$$$$$$$$$$$$$$ Line:904  Fun:phy_config  
+$$$$$$$$$$$$$$$$  Line:652   Fun:board_phy_config
+$$$$$$$$$$$$$$ Line:153  Fun:fec_mdio_write  
+$$$$$$$$$$$$$$  ddddd Line:180  Fun:fec_mdio_write: phy: 02 reg:1d val:0x1f
+$$$$$$$$$$$$$$ Line:153  Fun:fec_mdio_write  
+$$$$$$$$$$$$$$  ddddd Line:180  Fun:fec_mdio_write: phy: 02 reg:1e val:0x8
+$$$$$$$$$$$$$$ Line:153  Fun:fec_mdio_write  
+$$$$$$$$$$$$$$  ddddd Line:180  Fun:fec_mdio_write: phy: 02 reg:1d val:0x5
+$$$$$$$$$$$$$$ Line:153  Fun:fec_mdio_write  
+$$$$$$$$$$$$$$  ddddd Line:180  Fun:fec_mdio_write: phy: 02 reg:1e val:0x100
+$$$$$$$$$$$$$$$$$ Line = 401 , Fun:genphy_config
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:01 val:0x7949
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:0f val:0xa000
+$$$$$$$$$$$ genetic phy config Line :194
+$$$$$$$$$$ if not auto negotation ,begin to get phy speed
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:04 val:0x1de1
+$$$$$$$$$$$this is 10baseT_Half
+$$$$$$$$$$$this is 10baseT_full
+$$$$$$$$$$$this is 100baseT_Half
+$$$$$$$$$$$this is 100baseT_full
+$$$$$$$$$$$this is 1000baseT_full
+$$$$$$$$$$$$$$ Line:153  Fun:fec_mdio_write  
+$$$$$$$$$$$$$$  ddddd Line:180  Fun:fec_mdio_write: phy: 02 reg:04 val:0x11e1
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:09 val:0x200
+$$$$$$$$$$$SECOND this is 1000baseT_Half
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:00 val:0x3100
+$$$$$$$$$$$$$$ Line:153  Fun:fec_mdio_write  
+$$$$$$$$$$$$$$  ddddd Line:180  Fun:fec_mdio_write: phy: 02 reg:00 val:0x3300
+$$$$$$$$$$$$$ uuu eth->index = 0
+
+$$$$$$$$$$$$$$ Line:1056        Fun:fec_probe
+$$$$$$$$$$$$$$ Line:380  Fun:fec_get_hwaddr  
+
+$$$$$$$$$$$$$$$$$$$$$$$CONFIG_FEC_MXC_PHYADDR  = 2   Line:603  Fun:board_eth_init
+FEC0
+Warning: failed to set MAC address
+
+Normal Boot
+Hit any key to stop autoboot:  0 
+mmc2 is current device
+reading boot.scr
+** Unable to read file boot.scr **
+reading zImage
+5932040 bytes read in 274 ms (20.6 MiB/s)
+Booting from mmc ...
+reading imx6sx-sdb.dtb
+46952 bytes read in 19 ms (2.4 MiB/s)
+Kernel image @ 0x80800000 [ 0x000000 - 0x5a8408 ]
+## Flattened Device Tree blob at 83000000
+   Booting using the fdt blob at 0x83000000
+   Using Device Tree in place at 83000000, end 8300e767
+switch to ldo_bypass mode!
+
+Starting kernel ...
+
+Booting Linux on physical CPU 0x0
+Linux version 3.14.28+g91cf351 (launch@ubuntu) (gcc version 4.9.1 (GCC) ) #10 SMP PREEMPT Tue Nov 17 17:38:39 CST 2015
+CPU: ARMv7 Processor [412fc09a] revision 10 (ARMv7), cr=10c53c7d
+CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+Machine model: Freescale i.MX6 SoloX SDB Board
+
+AAAAAAAAAAAAAAAAAAAAAAAAA __atags_pointer = 83000000
+
+AAAAAAAAAAAAAAAAAAAAAAAAA
+
+ BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+ cmd_line = console=ttymxc0,115200 root=/dev/mmcblk3p2 rootwait rw
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cma: CMA: reserved 320 MiB at ac000000
+Memory policy: Data cache writealloc
+$$$$$$$$$$$$ imx6x_map_io fun Line = 349
+PERCPU: Embedded 8 pages/cpu @ab739000 s8896 r8192 d15680 u32768
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 260096
+Kernel command line: console=ttymxc0,115200 root=/dev/mmcblk3p2 rootwait rw
+PID hash table entries: 4096 (order: 2, 16384 bytes)
+Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+Memory: 696548K/1048576K available (7213K kernel code, 394K rwdata, 6144K rodata, 328K init, 428K bss, 352028K reserved, 0K highmem)
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+    vmalloc : 0xc0800000 - 0xff000000   (1000 MB)
+    lowmem  : 0x80000000 - 0xc0000000   (1024 MB)
+    pkmap   : 0x7fe00000 - 0x80000000   (   2 MB)
+    modules : 0x7f000000 - 0x7fe00000   (  14 MB)
+      .text : 0x80008000 - 0x80d13684   (13358 kB)
+      .init : 0x80d14000 - 0x80d662c0   ( 329 kB)
+      .data : 0x80d68000 - 0x80dcab40   ( 395 kB)
+       .bss : 0x80dcab4c - 0x80e35e9c   ( 429 kB)
+SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Preemptible hierarchical RCU implementation.
+        RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=1.
+RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+NR_IRQS:16 nr_irqs:16 16
+$$$$$$$tttt$$$$$$$ Line = 294
+L310 cache controller enabled
+l2x0: 16 ways, CACHE_ID 0x410000c8, AUX_CTRL 0x32030000, Cache size: 256 kB
+Switching to timer-based delay loop
+sched_clock: 32 bits at 3000kHz, resolution 333ns, wraps every 1431655765682ns
+clocksource_of_init: no matching clocksources found
+Console: colour dummy device 80x30
+Calibrating delay loop (skipped), value calculated using timer frequency.. 6.00 BogoMIPS (lpj=30000)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes)
+CPU: Testing write buffer coherency: ok
+CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+Setting up static identity map for 0x806dd328 - 0x806dd380
+Brought up 1 CPUs
+SMP: Total of 1 processors activated.
+CPU: All CPU(s) started in SVC mode.
+devtmpfs: initialized
+VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+pinctrl core: initialized pinctrl subsystem
+regulator-dummy: no parameters
+NET: Registered protocol family 16
+DMA: preallocated 256 KiB pool for atomic coherent allocations
+cpuidle: using governor ladder
+cpuidle: using governor menu
+Use WDOG1 as reset source
+%%%%%%%%%%%%%LIne:277 
+syscon 20c8000.anatop: regmap [mem 0x020c8000-0x020c8fff] registered
+vdd1p1: 800 <--> 1375 mV at 1100 mV 
+vdd3p0: 2800 <--> 3150 mV at 3000 mV 
+vdd2p5: 2100 <--> 2875 mV at 2500 mV 
+cpu: 725 <--> 1450 mV 
+vddpcie-phy: 725 <--> 1450 mV 
+vddsoc: 725 <--> 1450 mV 
+syscon 20e4000.iomuxc-gpr: regmap [mem 0x020e4000-0x020e7fff] registered
+syscon 21bc000.ocotp-ctrl: regmap [mem 0x021bc000-0x021bffff] registered
+syscon 21ac000.romcp: regmap [mem 0x021ac000-0x021affff] registered
+hw-breakpoint: found 5 (+1 reserved) breakpoint and 1 watchpoint registers.
+hw-breakpoint: maximum watchpoint size is 4 bytes.
+imx6sx-pinctrl 20e0000.iomuxc: initialized IMX pinctrl driver
+20dc000.gpc supply pu not found, using dummy regulator
+MU is ready for cross core communication!
+bio: create slab <bio-0> at 0
+mxs-dma 1804000.dma-apbh: initialized
+VCC_SD3: 3000 mV 
+PSU-5V0: 5000 mV 
+vref-3v3: 3300 mV 
+usb_otg1_vbus: 5000 mV 
+usb_otg2_vbus: 5000 mV 
+MPCIE_3V3: 3300 mV 
+i2c-core: driver [max17135] using legacy suspend method
+i2c-core: driver [max17135] using legacy resume method
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+usbphy_nop1.12 supply vcc not found, using dummy regulator
+i2c i2c-0: IMX I2C adapter registered
+i2c i2c-1: IMX I2C adapter registered
+i2c i2c-2: IMX I2C adapter registered
+i2c i2c-3: IMX I2C adapter registered
+Linux video capture interface: v2.00
+pps_core: LinuxPPS API ver. 1 registered
+pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+PTP clock support registered
+MIPI CSI2 driver module loaded
+Advanced Linux Sound Architecture Driver Initialized.
+Bluetooth: Core ver 2.18
+NET: Registered protocol family 31
+Bluetooth: HCI device and connection manager initialized
+Bluetooth: HCI socket layer initialized
+Bluetooth: L2CAP socket layer initialized
+Bluetooth: SCO socket layer initialized
+Switched to clocksource mxc_timer1
+cfg80211: Calling CRDA to update world regulatory domain
+NET: Registered protocol family 2
+TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+TCP bind hash table entries: 8192 (order: 4, 65536 bytes)
+TCP: Hash tables configured (established 8192 bind 8192)
+TCP: reno registered
+UDP hash table entries: 512 (order: 2, 16384 bytes)
+UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+NET: Registered protocol family 1
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+hw perfevents: enabled with ARMv7 Cortex-A9 PMU driver, 7 counters available
+Bus freq driver module loaded
+futex hash table entries: 256 (order: 2, 16384 bytes)
+VFS: Disk quotas dquot_6.5.2
+Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+NFS: Registering the id_resolver key type
+Key type id_resolver registered
+Key type id_legacy registered
+jffs2: version 2.2. (NAND) Â© 2001-2006 Red Hat, Inc.
+fuse init (API version 7.22)
+msgmni has been set to 2000
+io scheduler noop registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+imx-weim 21b8000.weim: Driver registered.
+backlight1.15 supply power not found, using dummy regulator
+backlight2.16 supply power not found, using dummy regulator
+MIPI DSI driver module loaded
+2224000.lcdif supply lcd not found, using dummy regulator
+mxsfb 2224000.lcdif: registered mxc display driver ldb
+DISPLAY: Power-on latency exceeded, new value 489333 ns
+DISPLAY: Power-off latency exceeded, new value 501333 ns
+DISPLAY: Power-on latency exceeded, new value 494334 ns
+Console: switching to colour frame buffer device 128x48
+DISPLAY: Power-off latency exceeded, new value 502000 ns
+mxsfb 2224000.lcdif: initialized
+imx-sdma 20ec000.sdma: no iram assigned, using external mem
+imx-sdma 20ec000.sdma: no event needs to be remapped
+imx-sdma 20ec000.sdma: loaded firmware 3.1
+imx-sdma 20ec000.sdma: initialized
+pfuze100-regulator 0-0008: Full layer: 2, Metal layer: 1
+pfuze100-regulator 0-0008: FAB: 0, FIN: 0
+pfuze100-regulator 0-0008: pfuze200 found.
+SW1AB: 300 <--> 1875 mV at 1175 mV 
+SW2: 800 <--> 3300 mV at 3300 mV 
+SW3A: 400 <--> 1975 mV at 1350 mV 
+SW3B: 400 <--> 1975 mV at 1350 mV 
+SWBST: 5000 <--> 5150 mV at 5000 mV 
+VSNVS: 1000 <--> 3000 mV at 3000 mV 
+VREFDDR: 750 mV 
+VGEN1: 800 <--> 1550 mV at 1200 mV 
+VGEN2: 800 <--> 1550 mV at 1500 mV 
+VGEN3: 1800 <--> 3300 mV at 2800 mV 
+VGEN4: 1800 <--> 3300 mV at 1800 mV 
+VGEN5: 1800 <--> 3300 mV at 3300 mV 
+VGEN6: 1800 <--> 3300 mV at 3000 mV 
+Serial: IMX driver
+2020000.serial: ttymxc0 at MMIO 0x2020000 (irq = 58, base_baud = 5000000) is a IMX
+console [ttymxc0] enabled
+21f4000.serial: ttymxc4 at MMIO 0x21f4000 (irq = 62, base_baud = 5000000) is a IMX
+serial: Freescale lpuart driver
+
+ 88888888888888888888888888
+major[249], minor[0]
+hello kernl
+imx sema4 driver is registered.
+[drm] Initialized drm 1.1.0 20060810
+[drm] Initialized vivante 1.0.0 20120216 on minor 0
+brd: module loaded
+loop: module loaded
+fsl-quadspi 21e4000.qspi: found mr25h256, expected n25q256a
+fsl-quadspi 21e4000.qspi: mr25h256 (32 Kbytes)
+fsl-quadspi 21e4000.qspi: unrecognized JEDEC id ffffff
+fsl-quadspi 21e4000.qspi: Freescale QuadSPI probe failed
+CAN device driver interface
+2090000.can supply xceiver not found, using dummy regulator
+flexcan 2090000.can: device registered (reg_base=c09d8000, irq=142)
+2094000.can supply xceiver not found, using dummy regulator
+flexcan 2094000.can: device registered (reg_base=c09e0000, irq=143)
+2188000.ethernet supply phy not found, using dummy regulator
+pps pps0: new PPS source ptp0
+fec 2188000.ethernet (unregistered net_device): Invalid MAC address: 00:00:00:00:00:00
+fec 2188000.ethernet (unregistered net_device): Using random MAC address: f2:44:d8:38:91:39
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 0, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 0, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0x
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 1, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 1, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 1, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xf
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0x4dd074 addr = 2, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0x4dd074 addr = 2, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0x4dd074 addr = 2, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0x4dd074 addr = 2, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0x4dd074 a
+
+ $$$$$$$$$$$$$$$$$$$ Line:196 , PHY_ID_AR8031 
+
+############### Reg[0] = 0x3100
+
+############### Reg[1] = 0x7949
+
+############### Reg[2] = 0x4d
+
+############### Reg[3] = 0xd074
+
+############### Reg[4] = 0x11e1
+
+############### Reg[5] = 0x 0
+
+############### Reg[6] = 0x 6
+
+############### Reg[7] = 0x2001
+
+############### Reg[8] = 0x 0
+
+############### Reg[9] = 0x200
+
+############### Reg[10] = 0x 0
+
+############### Reg[11] = 0x 0
+
+############### Reg[12] = 0x 0
+
+############### Reg[13] = 0x4003
+
+############### Reg[14] = 0x1000
+
+############### Reg[15] = 0xa000
+
+############### Reg[16] = 0x862
+
+############### Reg[17] = 0x50
+
+############### Reg[18] = 0x 0
+
+############### Reg[19] = 0xfc00
+
+############### Reg[20] = 0x82c
+
+############### Reg[21] = 0x 0
+
+############### Reg[22] = 0x4e8
+
+############### Reg[23] = 0x 0
+
+############### Reg[24] = 0x3200
+
+############### Reg[25] = 0x3000
+
+############### Reg[26] = 0x 0
+
+############### Reg[27] = 0x600
+
+############### Reg[28] = 0x 0
+
+############### Reg[29] = 0x 5
+
+############### Reg[30] = 0x100
+
+############### Reg[31] = 0x8100
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 3, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 3, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 3, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 3, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 3, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xf
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 4, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 4, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 4, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 4, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 4, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 4, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 5, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 5, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 5, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 5, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 5, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 5, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 5, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xfff
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 6, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 6, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 6, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 6, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 6, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 6, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 6, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 6, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffff
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 7, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 7, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 7, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 7, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 7, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 7, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 7, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 7, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 7, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xfffff
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 8, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 8, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 8, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 8, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 8, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 8, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 8, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 8, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 8, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 8, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffff
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 9, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 9, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 9, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 9, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 9, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 9, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 9, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 9, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 9, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 9, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 9, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xfffffff
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id =
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0x
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xfflibphy: fec_enet_mii_bus: probed
+fec 2188000.ethernet eth0: registered PHC device 0
+21b4000.ethernet supply phy not found, using dummy regulator
+pps pps1: new PPS source ptp1
+fec 21b4000.ethernet (unregistered net_device): Invalid MAC address: 00:00:00:00:00:00
+fec 21b4000.ethernet (unregistered net_device): Using random MAC address: d2:f3:f6:6f:25:e3
+fec 21b4000.ethernet eth1: registered PHC device 1
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+ehci-mxc: Freescale On-Chip EHCI Host driver
+usbcore: registered new interface driver usb-storage
+2184800.usbmisc supply vbus-wakeup not found, using dummy regulator
+ci_hdrc ci_hdrc.0: EHCI Host Controller
+ci_hdrc ci_hdrc.0: new USB bus registered, assigned bus number 1
+ci_hdrc ci_hdrc.0: USB 2.0 started, EHCI 1.00
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 1 port detected
+ci_hdrc ci_hdrc.1: EHCI Host Controller
+ci_hdrc ci_hdrc.1: new USB bus registered, assigned bus number 2
+ci_hdrc ci_hdrc.1: USB 2.0 started, EHCI 1.00
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 1 port detected
+mousedev: PS/2 mouse device common for all mice
+input: 20cc000.snvs-pwrkey as /devices/soc0/soc.0/2000000.aips-bus/20cc000.snvs-pwrkey/input/input0
+snvs_pwrkey 20cc000.snvs-pwrkey: i.MX snvs powerkey probed
+egalax_ts 1-0004: Failed to read firmware version
+egalax_ts: probe of 1-0004 failed with error -110
+2-0044 supply vdd not found, using dummy regulator
+i2c-core: driver [isl29023] using legacy suspend method
+i2c-core: driver [isl29023] using legacy resume method
+snvs_rtc 20cc034.snvs-rtc-lp: rtc core: registered 20cc034.snvs-rtc-lp as rtc0
+i2c /dev entries driver
+IR NEC protocol handler initialized
+IR RC5(x) protocol handler initialized
+IR RC6 protocol handler initialized
+IR JVC protocol handler initialized
+IR Sony protocol handler initialized
+IR RC5 (streamzap) protocol handler initialized
+IR SANYO protocol handler initialized
+IR MCE Keyboard/mouse protocol handler initialized
+pxp-v4l2 pxp_v4l2_out.19: initialized
+2-000e supply vdd not found, using dummy regulator
+2-000e supply vddio not found, using dummy regulator
+mag3110 2-000e: check mag3110 chip ID
+mag3110 2-000e: read chip ID 0xffffff92 is not equal to 0xc4!
+mag3110: probe of 2-000e failed with error -22
+i2c-core: driver [mag3110] using legacy suspend method
+i2c-core: driver [mag3110] using legacy resume method
+2-001c supply vdd not found, using dummy regulator
+2-001c supply vddio not found, using dummy regulator
+mma8451 2-001c: read chip ID 0x1 is not equal to 0x1a or 0x2a!
+mma8451: probe of 2-001c failed with error -22
+imx2-wdt 20bc000.wdog: IMX2+ Watchdog Timer enabled. timeout=60s (nowayout=0)
+Bluetooth: HCI UART driver ver 2.2
+Bluetooth: HCI H4 protocol initialized
+Bluetooth: HCI BCSP protocol initialized
+Bluetooth: HCIATH3K protocol initialized
+usbcore: registered new interface driver bcm203x
+usbcore: registered new interface driver btusb
+Bluetooth: Generic Bluetooth SDIO driver ver 0.1
+usbcore: registered new interface driver ath3k
+sdhci: Secure Digital Host Controller Interface driver
+sdhci: Copyright(c) Pierre Ossman
+sdhci-pltfm: SDHCI platform and OF driver helper
+mmc1: no vqmmc regulator found
+mmc1: no vmmc regulator found
+mmc1: SDHCI controller on 2194000.usdhc [2194000.usdhc] using ADMA
+mmc2: no vqmmc regulator found
+mmc2: SDHCI controller on 2198000.usdhc [2198000.usdhc] using ADMA
+sdhci-esdhc-imx 219c000.usdhc: could not get ultra high speed state, work on normal mode
+mmc3: no vqmmc regulator found
+mmc3: no vmmc regulator found
+mmc3: SDHCI controller on 219c000.usdhc [219c000.usdhc] using ADMA
+galcore: clk_get 2d core clock failed, disable 2d/vg!
+Galcore version 5.0.11.25762
+mmc3: new high speed SDHC card at address 59b4
+mmcblk3: mmc3:59b4 SD    29.6 GiB 
+ mmcblk3: p1 p2
+caam 2100000.caam: Instantiated RNG4 SH0
+caam 2100000.caam: Instantiated RNG4 SH1
+caam 2100000.caam: device ID = 0x0a160100 (Era 4)
+caam 2100000.caam: job rings = 2, qi = 0
+caam algorithms registered in /proc/crypto
+caam_jr 2101000.jr0: registering rng-caam
+platform caam_sm: blkkey_ex: 8 keystore units available
+platform caam_sm: 64-bit clear key:
+platform caam_sm: [0000] 00 01 02 03 04 0f 06 07
+platform caam_sm: 64-bit black key:
+platform caam_sm: [0000] 69 4d 16 84 ce 64 5c c1
+platform caam_sm: [0008] a9 ff b3 93 9b c6 44 63
+platform caam_sm: 128-bit clear key:
+platform caam_sm: [0000] 00 01 02 03 04 0f 06 07
+platform caam_sm: [0008] 08 09 0a 0b 0c 0d 0e 0f
+platform caam_sm: 128-bit black key:
+platform caam_sm: [0000] cb cb a4 50 b9 bd 5c 2a
+platform caam_sm: [0008] 82 e7 e0 a6 ac 61 71 e5
+platform caam_sm: 192-bit clear key:
+platform caam_sm: [0000] 00 01 02 03 04 0f 06 07
+platform caam_sm: [0008] 08 09 0a 0b 0c 0d 0e 0f
+platform caam_sm: [0016] 10 11 12 13 14 15 16 17
+platform caam_sm: 192-bit black key:
+platform caam_sm: [0000] c8 6f 36 f8 49 b8 f5 83
+platform caam_sm: [0008] d7 ce 95 3d c3 7b 82 44
+platform caam_sm: [0016] 83 b5 de 07 73 10 de b7
+platform caam_sm: [0024] a1 10 54 f1 d7 69 36 27
+platform caam_sm: 256-bit clear key:
+platform caam_sm: [0000] 00 01 02 03 04 0f 06 07
+platform caam_sm: [0008] 08 09 0a 0b 0c 0d 0e 0f
+platform caam_sm: [0016] 10 11 12 13 14 15 16 17
+platform caam_sm: [0024] 18 19 1a 1b 1c 1d 1e 1f
+platform caam_sm: 256-bit black key:
+platform caam_sm: [0000] 39 36 3e 09 24 d6 b8 88
+platform caam_sm: [0008] 9c c1 55 1a 6d 49 47 98
+platform caam_sm: [0016] 36 8c 2b 5f c3 58 8b 81
+platform caam_sm: [0024] 16 b1 af b8 fe 69 fb a6
+platform caam_sm: 64-bit unwritten blob:
+platform caam_sm: [0000] 00 00 00 00 00 00 00 00
+platform caam_sm: [0008] 00 00 00 00 00 00 00 00
+platform caam_sm: [0016] 00 00 00 00 00 00 00 00
+platform caam_sm: [0024] 00 00 00 00 00 00 00 00
+platform caam_sm: [0032] 00 00 00 00 00 00 00 00
+platform caam_sm: [0040] 00 00 00 00 00 00 00 00
+platform caam_sm: [0048] 00 00 00 00 00 00 00 00
+platform caam_sm: [0056] 00 00 00 00 00 00 00 00
+platform caam_sm: [0064] 00 00 00 00 00 00 00 00
+platform caam_sm: [0072] 00 00 00 00 00 00 00 00
+platform caam_sm: [0080] 00 00 00 00 00 00 00 00
+platform caam_sm: [0088] 00 00 00 00 00 00 00 00
+platform caam_sm: 128-bit unwritten blob:
+platform caam_sm: [0000] 00 00 00 00 00 00 00 00
+platform caam_sm: [0008] 00 00 00 00 00 00 00 00
+platform caam_sm: [0016] 00 00 00 00 00 00 00 00
+platform caam_sm: [0024] 00 00 00 00 00 00 00 00
+platform caam_sm: [0032] 00 00 00 00 00 00 00 00
+platform caam_sm: [0040] 00 00 00 00 00 00 00 00
+platform caam_sm: [0048] 00 00 00 00 00 00 00 00
+platform caam_sm: [0056] 00 00 00 00 00 00 00 00
+platform caam_sm: [0064] 00 00 00 00 00 00 00 00
+platform caam_sm: [0072] 00 00 00 00 00 00 00 00
+platform caam_sm: [0080] 00 00 00 00 00 00 00 00
+platform caam_sm: [0088] 00 00 00 00 00 00 00 00
+platform caam_sm: 196-bit unwritten blob:
+platform caam_sm: [0000] 00 00 00 00 00 00 00 00
+platform caam_sm: [0008] 00 00 00 00 00 00 00 00
+platform caam_sm: [0016] 00 00 00 00 00 00 00 00
+platform caam_sm: [0024] 00 00 00 00 00 00 00 00
+platform caam_sm: [0032] 00 00 00 00 00 00 00 00
+platform caam_sm: [0040] 00 00 00 00 00 00 00 00
+platform caam_sm: [0048] 00 00 00 00 00 00 00 00
+platform caam_sm: [0056] 00 00 00 00 00 00 00 00
+platform caam_sm: [0064] 00 00 00 00 00 00 00 00
+platform caam_sm: [0072] 00 00 00 00 00 00 00 00
+platform caam_sm: [0080] 00 00 00 00 00 00 00 00
+platform caam_sm: [0088] 00 00 00 00 00 00 00 00
+platform caam_sm: 256-bit unwritten blob:
+platform caam_sm: [0000] 00 00 00 00 00 00 00 00
+platform caam_sm: [0008] 00 00 00 00 00 00 00 00
+platform caam_sm: [0016] 00 00 00 00 00 00 00 00
+platform caam_sm: [0024] 00 00 00 00 00 00 00 00
+platform caam_sm: [0032] 00 00 00 00 00 00 00 00
+platform caam_sm: [0040] 00 00 00 00 00 00 00 00
+platform caam_sm: [0048] 00 00 00 00 00 00 00 00
+platform caam_sm: [0056] 00 00 00 00 00 00 00 00
+platform caam_sm: [0064] 00 00 00 00 00 00 00 00
+platform caam_sm: [0072] 00 00 00 00 00 00 00 00
+platform caam_sm: [0080] 00 00 00 00 00 00 00 00
+platform caam_sm: [0088] 00 00 00 00 00 00 00 00
+platform caam_sm: 64-bit black key in blob:
+platform caam_sm: [0000] a2 1c 9f dc 84 10 b7 36
+platform caam_sm: [0008] 15 10 99 88 09 de 7d 43
+platform caam_sm: [0016] 0e f7 5d 53 43 2d d4 99
+platform caam_sm: [0024] 25 08 e0 83 c8 84 1e 8b
+platform caam_sm: [0032] a9 5b b8 2f 00 aa ce d1
+platform caam_sm: [0040] ee 1f 31 71 0c ba bf e0
+platform caam_sm: [0048] c8 e8 4c 15 8e 70 d6 80
+platform caam_sm: [0056] 00 00 00 00 00 00 00 00
+platform caam_sm: [0064] 00 00 00 00 00 00 00 00
+platform caam_sm: [0072] 00 00 00 00 00 00 00 00
+platform caam_sm: [0080] 00 00 00 00 00 00 00 00
+platform caam_sm: [0088] 00 00 00 00 00 00 00 00
+platform caam_sm: 128-bit black key in blob:
+platform caam_sm: [0000] e7 e0 6e 0e 98 ee 27 c6
+platform caam_sm: [0008] 0e b5 f5 71 b8 8f fd 76
+platform caam_sm: [0016] b0 29 c2 4b ea ba 7d 84
+platform caam_sm: [0024] 9a bb 6a a1 a3 15 13 9c
+platform caam_sm: [0032] 55 af 23 18 c8 ff 77 80
+platform caam_sm: [0040] 23 b3 3d 17 10 5a 95 f5
+platform caam_sm: [0048] b9 7a 8b 18 71 e0 69 04
+platform caam_sm: [0056] b3 35 90 64 a1 d3 b6 b8
+platform caam_sm: [0064] 00 00 00 00 00 00 00 00
+platform caam_sm: [0072] 00 00 00 00 00 00 00 00
+platform caam_sm: [0080] 00 00 00 00 00 00 00 00
+platform caam_sm: [0088] 00 00 00 00 00 00 00 00
+platform caam_sm: 192-bit black key in blob:
+platform caam_sm: [0000] c2 44 68 44 af d6 fc 82
+platform caam_sm: [0008] 25 bf c7 f0 3f bc 22 78
+platform caam_sm: [0016] 41 f9 67 df 93 09 fc d2
+platform caam_sm: [0024] 3f 00 30 f5 11 90 bb 61
+platform caam_sm: [0032] c2 a4 71 86 96 d6 7c 35
+platform caam_sm: [0040] 35 d3 0c 50 d0 29 ef 9a
+platform caam_sm: [0048] 37 a1 eb b7 70 36 62 69
+platform caam_sm: [0056] 25 e3 eb bd 8e d5 41 bc
+platform caam_sm: [0064] 1c 51 20 ae ef be 2b a4
+platform caam_sm: [0072] 00 00 00 00 00 00 00 00
+platform caam_sm: [0080] 00 00 00 00 00 00 00 00
+platform caam_sm: [0088] 00 00 00 00 00 00 00 00
+platform caam_sm: 256-bit black key in blob:
+platform caam_sm: [0000] 75 ae 3f 29 6b e5 5c b8
+platform caam_sm: [0008] b9 b9 b8 73 dc 5b e1 fa
+platform caam_sm: [0016] de 6d 7d c4 d2 23 08 0a
+platform caam_sm: [0024] f7 14 70 63 8b 0a 9d 24
+platform caam_sm: [0032] 0e 6a 7a 04 21 36 b8 cd
+platform caam_sm: [0040] c7 a4 4b fd eb f1 62 fa
+platform caam_sm: [0048] 75 98 ad 02 8d fa 2f 3d
+platform caam_sm: [0056] 3e a3 00 b4 0a fe 47 a0
+platform caam_sm: [0064] ed 8d 7a d9 6f c8 d5 61
+platform caam_sm: [0072] 09 35 dc 3f 61 3f 29 ab
+platform caam_sm: [0080] 00 00 00 00 00 00 00 00
+platform caam_sm: [0088] 00 00 00 00 00 00 00 00
+platform caam_sm: restored 64-bit black key:
+platform caam_sm: [0000] 5e 7b 4b 1d 93 eb 68 dd
+platform caam_sm: [0008] 73 2b f1 98 38 0d 01 50
+platform caam_sm: restored 128-bit black key:
+platform caam_sm: [0000] cb cb a4 50 b9 bd 5c 2a
+platform caam_sm: [0008] 82 e7 e0 a6 ac 61 71 e5
+platform caam_sm: restored 192-bit black key:
+platform caam_sm: [0000] c8 6f 36 f8 49 b8 f5 83
+platform caam_sm: [0008] d7 ce 95 3d c3 7b 82 44
+platform caam_sm: [0016] 3a 40 12 35 a9 b2 94 93
+platform caam_sm: [0024] b0 0e 0c 2c 36 b0 7e bf
+platform caam_sm: restored 256-bit black key:
+platform caam_sm: [0000] 39 36 3e 09 24 d6 b8 88
+platform caam_sm: [0008] 9c c1 55 1a 6d 49 47 98
+platform caam_sm: [0016] 36 8c 2b 5f c3 58 8b 81
+platform caam_sm: [0024] 16 b1 af b8 fe 69 fb a6
+snvs-secvio 20cc000.caam-snvs: violation handlers armed - non-secure state
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+wm8962 3-001a: Failed to read ID register
+wm8962: probe of 3-001a failed with error -110
+fsl-asrc 2034000.asrc: driver registered
+imx-wm8962 sound.22: failed to find codec platform device
+imx-wm8962: probe of sound.22 failed with error -22
+imx-spdif sound-spdif.23: snd-soc-dummy-dai <-> 2004000.spdif mapping ok
+NET: Registered protocol family 26
+TCP: cubic registered
+NET: Registered protocol family 10
+sit: IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+can: controller area network core (rev 20120528 abi 9)
+NET: Registered protocol family 29
+can: raw protocol (rev 20120528)
+can: broadcast manager protocol (rev 20120528 t)
+can: netlink gateway (rev 20130117) max_hops=1
+Bluetooth: RFCOMM TTY layer initialized
+Bluetooth: RFCOMM socket layer initialized
+Bluetooth: RFCOMM ver 1.11
+Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+Bluetooth: BNEP filters: protocol multicast
+Bluetooth: BNEP socket layer initialized
+Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+Bluetooth: HIDP socket layer initialized
+8021q: 802.1Q VLAN Support v1.8
+Key type dns_resolver registered
+$$SSS$$$$$$$$$$$$ Line = 331
+$$$$$$$$$$$$$$kkss Line = 310
+cpu cpu0: dev_pm_opp_get_opp_count: device OPP not found (-19)
+SWBST: disabling
+PSU-5V0: disabling
+VCC_SD3: disabling
+regulator-dummy: disabling
+imx mcc test is registered.
+input: gpio-keys.17 as /devices/soc0/gpio-keys.17/input/input2
+snvs_rtc 20cc034.snvs-rtc-lp: setting system clock to 1970-01-01 00:00:04 UTC (4)
+ALSA device list:
+  #0: imx-spdif
+kjournald starting.  Commit interval 5 seconds
+EXT3-fs (mmcblk3p2): using internal journal
+EXT3-fs (mmcblk3p2): mounted filesystem with ordered data mode
+VFS: Mounted root (ext3 filesystem) on device 179:2.
+devtmpfs: mounted
+Freeing unused kernel memory: 328K (80d14000 - 80d66000)
+INIT: version 2.88 booting
+Starting udev
+udevd[161]: starting version 182
+Unable to handle kernel NULL pointer dereference at virtual address 00000004
+pgd = a8728000
+[00000004] *pgd=a870d831, *pte=00000000, *ppte=00000000
+Internal error: Oops: 17 [#1] PREEMPT SMP ARM
+Modules linked in:
+CPU: 0 PID: 163 Comm: udevadm Not tainted 3.14.28+g91cf351 #10
+task: a81a7600 ti: a86f2000 task.ti: a86f2000
+PC is at sysfs_kf_write+0x3c/0x48
+LR is at 0xa832c510
+pc : [<80130360>]    lr : [<a832c510>]    psr: 200d0013
+sp : a86f3f38  ip : 00000000  fp : 00000000
+r10: a87b0188  r9 : a87b0240  r8 : a86f3f88
+r7 : 00000000  r6 : 00000000  r5 : a87b0180  r4 : a87b0240
+r3 : 00000003  r2 : a87b0240  r1 : 80d92284  r0 : a803e100
+Flags: nzCv  IRQs on  FIQs on  Mode SVC_32  ISA ARM  Segment user
+Control: 10c53c7d  Table: a872804a  DAC: 00000015
+Process udevadm (pid: 163, stack limit = 0xa86f2238)
+Stack: (0xa86f3f38 to 0xa86f4000)
+3f20:                                                       00000003 8013360c
+3f40: 00000000 00000000 a8704180 00000003 7ee2eef2 a86f3f88 8000e624 a86f2000
+3f60: 00000000 800d505c 00000000 00000000 a8704180 a8704180 00000003 7ee2eef2
+3f80: 8000e624 800d5644 00000000 00000000 00000000 00368970 00000003 000313c0
+3fa0: 00000004 8000e4a0 00368970 00000003 00000003 7ee2eef2 00000003 0000ff00
+3fc0: 00368970 00000003 000313c0 00000004 0002796c 000277c4 00363008 00000000
+3fe0: 00000000 7ee2e3cc 0001a11c 76e4c43c 600d0010 00000003 abf5e821 abf5ec21
+[<80130360>] (sysfs_kf_write) from [<8013360c>] (kernfs_fop_write+0xb4/0x14c)
+[<8013360c>] (kernfs_fop_write) from [<800d505c>] (vfs_write+0xa8/0x198)
+[<800d505c>] (vfs_write) from [<800d5644>] (SyS_write+0x44/0x9c)
+[<800d5644>] (SyS_write) from [<8000e4a0>] (ret_fast_syscall+0x0/0x30)
+Code: e1a00002 e8bd8010 e59e1038 e1a02004 (e59cc004) 
+---[ end trace b46bb55a14b16157 ]---
+/etc/rcS.d/S04udev: line 39:   163 Segmentation fault      udevadm trigger --action=add
+bootlogd: cannot allocate pseudo tty: No such file or directory
+random: dd urandom read with 92 bits of entropy available
+Populating dev cache
+ALSA: Restoring mixer settings...
+No state is present for card imxspdif
+Found hardware: "imx-spdif" "" "" "" ""
+Hardware is initialized using a generic method
+No state is present for card imxspdif
+random: nonblocking pool is initialized
+Tue Nov 17 10:18:20 UTC 2015
+INIT: Entering runlevel: 5
+Configuring network interfaces... 
+ $$$$$$$$$$$$$$$$$$$ Line:196 , PHY_ID_AR8031 
+
+############### Reg[0] = 0x 0
+
+############### Reg[1] = 0x7949
+
+############### Reg[2] = 0x4d
+
+############### Reg[3] = 0xd074
+
+############### Reg[4] = 0x11e1
+
+############### Reg[5] = 0x 0
+
+############### Reg[6] = 0x 6
+
+############### Reg[7] = 0x2001
+
+############### Reg[8] = 0x 0
+
+############### Reg[9] = 0x200
+
+############### Reg[10] = 0x 0
+
+############### Reg[11] = 0x 0
+
+############### Reg[12] = 0x 0
+
+############### Reg[13] = 0x4003
+
+############### Reg[14] = 0x1000
+
+############### Reg[15] = 0xa000
+
+############### Reg[16] = 0x862
+
+############### Reg[17] = 0x850
+
+############### Reg[18] = 0x 0
+
+############### Reg[19] = 0x7400
+
+############### Reg[20] = 0x82c
+
+############### Reg[21] = 0x 0
+
+############### Reg[22] = 0x4e8
+
+############### Reg[23] = 0x 0
+
+############### Reg[24] = 0x3200
+
+############### Reg[25] = 0x3000
+
+############### Reg[26] = 0x 0
+
+############### Reg[27] = 0x600
+
+############### Reg[28] = 0x 0
+
+############### Reg[29] = 0x 5
+
+############### Reg[30] = 0x100
+
+############### Reg[31] = 0x8100
+fec 2188000.ethernet eth0: Freescale FEC PHY driver [Generic PHY] (mii_bus:phy_addr=2188000.ethernet:02, irq=-1)
+IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+udhcpc (v1.22.1) started
+Sending discover...
+Sending discover...
+libphy: 2188000.ethernet:02 - Link is Up - 1000/Full
+IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Sending discover...
+libphy: 2188000.ethernet:02 - Link is Down
+No lease, forking to background
+done.
+Starting system message bus: dbus.
+Starting rpcbind daemon...done.
+Starting advanced power management daemon: No APM support in kernel
+(failed.)
+Starting syslogd/klogd: done
+ * Starting Avahi mDNS/DNS-SD Daemon: avahi-daemon
+   ...done.
+Starting Telephony daemon
+Starting Linux NFC daemon
+libphy: 2188000.ethernet:02 - Link is Up - 1000/Full
+
+Poky (Yocto Project Reference Distro) 1.7 imx6sxsabresd /dev/ttymxc0
+
+imx6sxsabresd login: root
+root@imx6sxsabresd:~# ls
+root@imx6sxsabresd:~# udhcpc 
+udhcpc (v1.22.1) started
+Sending discover...
+Sending discover...
+Sending discover...
+^C
+root@imx6sxsabresd:~# ifconfig eth0 up
+root@imx6sxsabresd:~# ifconfig eth0 down
+root@imx6sxsabresd:~# ifconfig eth0 up
+
+ $$$$$$$$$$$$$$$$$$$ Line:196 , PHY_ID_AR8031 
+
+############### Reg[0] = 0x 0
+
+############### Reg[1] = 0x7949
+
+############### Reg[2] = 0x4d
+
+############### Reg[3] = 0xd074
+
+############### Reg[4] = 0x15e1
+
+############### Reg[5] = 0x 0
+
+############### Reg[6] = 0x 6
+
+############### Reg[7] = 0x2001
+
+############### Reg[8] = 0x 0
+
+############### Reg[9] = 0x200
+
+############### Reg[10] = 0x 0
+
+############### Reg[11] = 0x 0
+
+############### Reg[12] = 0x 0
+
+############### Reg[13] = 0x4003
+
+############### Reg[14] = 0x1000
+
+############### Reg[15] = 0xa000
+
+############### Reg[16] = 0x862
+
+############### Reg[17] = 0x810
+
+############### Reg[18] = 0x 0
+
+############### Reg[19] = 0xfc00
+
+############### Reg[20] = 0x82c
+
+############### Reg[21] = 0x 0
+
+############### Reg[22] = 0x4e8
+
+############### Reg[23] = 0x 0
+
+############### Reg[24] = 0x3200
+
+############### Reg[25] = 0x3000
+
+############### Reg[26] = 0x 0
+
+############### Reg[27] = 0x600
+
+############### Reg[28] = 0x 0
+
+############### Reg[29] = 0x 5
+
+############### Reg[30] = 0x100
+
+############### Reg[31] = 0x8100
+fec 2188000.ethernet eth0: Freescale FEC PHY driver [Generic PHY] (mii_bus:phy_addr=2188000.ethernet:02, irq=-1)
+root@imx6sxsabresd:~# udhcpc 
+udhcpc (v1.22.1) started
+Sending discover...
+libphy: 2188000.ethernet:02 - Link is Up - 1000/Full
+libphy: 2188000.ethernet:02 - Link is Down
+Sending discover...
+Sending discover...
+^C
+root@imx6sxsabresd:~# libphy: 2188000.ethernet:02 - Link is Up - 100/Full
+
+
+U-Boot 2014.04 (Nov 17 2015 - 16:22:40)
+
+CPU:   Freescale i.MX6SX rev1.2 at 792 MHz
+CPU:   Temperature 30 C, calibration data: 0x59c50269
+Reset cause: POR
+Board: MX6SX SABRE SDB
+I2C:   ready
+DRAM:  1 GiB
+$$$$$$$$$$$$$$$$  Line:895   Fun:board_init
+force_idle_bus: sda=0 scl=0 sda.gp=0x3 scl.gp=0x2
+force_idle_bus: failed to clear bus, sda=1 scl=0
+$$$$$$$$$$$$$$$$  Line:0  fec_id = 614 , Fun:setup_fec
+$$$$$$$$$$$$$$$$  Line:271   Fun:board_qspi_init
+MMC:   $$$$$$$$$$$$$$$$  Line:354   Fun:board_mmc_init
+FSL_SDHC: 0, FSL_SDHC: 1, FSL_SDHC: 2
+*** Warning - bad CRC, using default environment
+
+Display: Hannstar-XGA (1024x768)
+Video: 1024x768x18
+gis input --- No input
+In:    serial
+Out:   serial
+Err:   serial
+Found PFUZE200! deviceid 0x1, revid 0x21
+$$$$$$$$$$$$$$$$  devno = 2, Line:418   Fun:board_late_mmc_init
+$$$$$$$$$$$$ Line:432, Fun:board_late_mmc_init , cmd = mmc dev 2
+mmc2 is current device
+Net:   $$$$$$$$$$$$$$ Line:482  Fun:phy_init  
+$$$$$$$$$$$$$$ Line:76  Fun:phy_atheros_init  
+$$$$$$$$$$$$Register the driver name is [AR8031/AR8033] 
+$$$$$$$$$$$$$$$$  Line:596   Fun:board_eth_init
+$$$$$$$$$$$$$$ Line:1081  Fun:fec_get_miibus  
+$$$$$$$$$$$$$$ Line:897  Fun:fec_set_dev_name  
+$$$$$$$$$$$$$$ Line:137  Fun:fec_mii_setspeed  
+$$$$$$$$$$$$$$ Line:1123  Fun:fecmxc_initialize_multi dev_id = 0 
+$$$$$$$$$$$$$ begin to find phy  phy_id = 0x 2, Line:1128 , Fun:fecmxc_initialize_multi  
+
+$$$$$$$$$$$$$$phy_mask = 0x 4  Line:841  Fun:phy_find_by_mask 
+$$$$$$$$$$$$$$ phy_mask = 0x 4, interface = 6 , Line:713  Fun:get_phy_device_by_mask  
+$$$$$$$$$$$$$$ phy_mask = 0x 4, Line:692  Fun:search_for_existing_phy
+
+ $$$$$$$$$$addr = 0x 2 
+$$$$$$$$$$$$$$ Line:701  Fun:search_for_existing_phy
+$$$$$$$$$$$$$$ Line:717  Fun:get_phy_device_by_mask  
+
+$$$$$$LIne:722 ,Func:get_phy_device_by_mask not find the exist phydev
+
+$$$$$$$$$$$$$$ phy_mask = 0x 4, Line:669  Fun:create_phy_by_mask
+
+$$$$$$$$$$$$$$DDD addr = 2 ,Line:672  Fun:create_phy_by_mask  
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:02 val:0x4d
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:03 val:0xd074
+$$$$$$$$$LIne:659, Fun:get_phy_id,  phy_id =  0x4dd074
+
+ $$$$$$$$$$$$ r = 0,phy_id = 0x4dd074, devad = -1 Line:674, Fun:create_phy_by_mask 
+
+$$$$$$$$$$$$$$$$ Line:679 , Fun:create_phy_by_mask
+
+ $$$$$$$$$$$$$$ INTERFACE = 6
+
+ $$$$$$$$$$$$$$ phy_id  = 0x4dd074
+
+ $$$$$$$$$$$$$$ addr = 0x 2
+$$$$$$$$$$$$$$ Line:605  Fun:phy_device_create
+
+$$$$$$$$$$$$$$ Line:571  Fun:get_phy_driver
+
+$$$$$$$$$$$$$$ mmd = 0, advertising = 767, Line:541  Fun:phy_probe
+$$$$$$$$$$$$$$ Line:993  Fun:fec_probe  
+$$$$$$$$$$$$$$ Line:907  Fun:fec_alloc_descs  
+$$$$$$$$$$$$$$ Line:413  Fun:fec_reg_setup  
+$$$$$$$$$$$$$$ Line:897  Fun:fec_set_dev_name  
+$$$$$$$$$$$$$$ Line:137  Fun:fec_mii_setspeed  
+
+$$$$$$$$$$$$$$ Line:1046        Fun:fec_probe
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:00 val:0x3100
+$$$$$$$$$$$$$$ Line:776  Fun:phy_reset  reg = 0x3100
+$$$$$$$$$$$$$$ Line:153  Fun:fec_mdio_write  
+$$$$$$$$$$$$$$  ddddd Line:180  Fun:fec_mdio_write: phy: 02 reg:00 val:0xb100
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:00 val:0x3100
+$$$$$$$$$$$$$$ Line:800  Fun:phy_reset  reg = 0x3100
+$$$$$$$$$$$$$$ Line:857  Fun:phy_connect_dev  
+$$$$$$$$$$$$$$ Line:904  Fun:phy_config  
+$$$$$$$$$$$$$$$$  Line:652   Fun:board_phy_config
+$$$$$$$$$$$$$$ Line:153  Fun:fec_mdio_write  
+$$$$$$$$$$$$$$  ddddd Line:180  Fun:fec_mdio_write: phy: 02 reg:1d val:0x1f
+$$$$$$$$$$$$$$ Line:153  Fun:fec_mdio_write  
+$$$$$$$$$$$$$$  ddddd Line:180  Fun:fec_mdio_write: phy: 02 reg:1e val:0x8
+$$$$$$$$$$$$$$ Line:153  Fun:fec_mdio_write  
+$$$$$$$$$$$$$$  ddddd Line:180  Fun:fec_mdio_write: phy: 02 reg:1d val:0x5
+$$$$$$$$$$$$$$ Line:153  Fun:fec_mdio_write  
+$$$$$$$$$$$$$$  ddddd Line:180  Fun:fec_mdio_write: phy: 02 reg:1e val:0x100
+$$$$$$$$$$$$$$$$$ Line = 401 , Fun:genphy_config
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:01 val:0x7949
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:0f val:0xa000
+$$$$$$$$$$$ genetic phy config Line :194
+$$$$$$$$$$ if not auto negotation ,begin to get phy speed
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:04 val:0x1de1
+$$$$$$$$$$$this is 10baseT_Half
+$$$$$$$$$$$this is 10baseT_full
+$$$$$$$$$$$this is 100baseT_Half
+$$$$$$$$$$$this is 100baseT_full
+$$$$$$$$$$$this is 1000baseT_full
+$$$$$$$$$$$$$$ Line:153  Fun:fec_mdio_write  
+$$$$$$$$$$$$$$  ddddd Line:180  Fun:fec_mdio_write: phy: 02 reg:04 val:0x11e1
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:09 val:0x200
+$$$$$$$$$$$SECOND this is 1000baseT_Half
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:00 val:0x3100
+$$$$$$$$$$$$$$ Line:153  Fun:fec_mdio_write  
+$$$$$$$$$$$$$$  ddddd Line:180  Fun:fec_mdio_write: phy: 02 reg:00 val:0x3300
+$$$$$$$$$$$$$ uuu eth->index = 0
+
+$$$$$$$$$$$$$$ Line:1056        Fun:fec_probe
+$$$$$$$$$$$$$$ Line:380  Fun:fec_get_hwaddr  
+
+$$$$$$$$$$$$$$$$$$$$$$$CONFIG_FEC_MXC_PHYADDR  = 2   Line:603  Fun:board_eth_init
+FEC0
+Warning: failed to set MAC address
+
+Normal Boot
+Hit any key to stop autoboot:  0 
+mmc2 is current device
+reading boot.scr
+** Unable to read file boot.scr **
+reading zImage
+5932040 bytes read in 274 ms (20.6 MiB/s)
+Booting from mmc ...
+reading imx6sx-sdb.dtb
+46952 bytes read in 19 ms (2.4 MiB/s)
+Kernel image @ 0x80800000 [ 0x000000 - 0x5a8408 ]
+## Flattened Device Tree blob at 83000000
+   Booting using the fdt blob at 0x83000000
+   Using Device Tree in place at 83000000, end 8300e767
+switch to ldo_bypass mode!
+
+Starting kernel ...
+
+Booting Linux on physical CPU 0x0
+Linux version 3.14.28+g91cf351 (launch@ubuntu) (gcc version 4.9.1 (GCC) ) #10 SMP PREEMPT Tue Nov 17 17:38:39 CST 2015
+CPU: ARMv7 Processor [412fc09a] revision 10 (ARMv7), cr=10c53c7d
+CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+Machine model: Freescale i.MX6 SoloX SDB Board
+
+AAAAAAAAAAAAAAAAAAAAAAAAA __atags_pointer = 83000000
+
+AAAAAAAAAAAAAAAAAAAAAAAAA
+
+ BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+ cmd_line = console=ttymxc0,115200 root=/dev/mmcblk3p2 rootwait rw
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cma: CMA: reserved 320 MiB at ac000000
+Memory policy: Data cache writealloc
+$$$$$$$$$$$$ imx6x_map_io fun Line = 349
+PERCPU: Embedded 8 pages/cpu @ab739000 s8896 r8192 d15680 u32768
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 260096
+Kernel command line: console=ttymxc0,115200 root=/dev/mmcblk3p2 rootwait rw
+PID hash table entries: 4096 (order: 2, 16384 bytes)
+Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+Memory: 696548K/1048576K available (7213K kernel code, 394K rwdata, 6144K rodata, 328K init, 428K bss, 352028K reserved, 0K highmem)
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+    vmalloc : 0xc0800000 - 0xff000000   (1000 MB)
+    lowmem  : 0x80000000 - 0xc0000000   (1024 MB)
+    pkmap   : 0x7fe00000 - 0x80000000   (   2 MB)
+    modules : 0x7f000000 - 0x7fe00000   (  14 MB)
+      .text : 0x80008000 - 0x80d13684   (13358 kB)
+      .init : 0x80d14000 - 0x80d662c0   ( 329 kB)
+      .data : 0x80d68000 - 0x80dcab40   ( 395 kB)
+       .bss : 0x80dcab4c - 0x80e35e9c   ( 429 kB)
+SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Preemptible hierarchical RCU implementation.
+        RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=1.
+RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+NR_IRQS:16 nr_irqs:16 16
+$$$$$$$tttt$$$$$$$ Line = 294
+L310 cache controller enabled
+l2x0: 16 ways, CACHE_ID 0x410000c8, AUX_CTRL 0x32030000, Cache size: 256 kB
+Switching to timer-based delay loop
+sched_clock: 32 bits at 3000kHz, resolution 333ns, wraps every 1431655765682ns
+clocksource_of_init: no matching clocksources found
+Console: colour dummy device 80x30
+Calibrating delay loop (skipped), value calculated using timer frequency.. 6.00 BogoMIPS (lpj=30000)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes)
+CPU: Testing write buffer coherency: ok
+CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+Setting up static identity map for 0x806dd328 - 0x806dd380
+Brought up 1 CPUs
+SMP: Total of 1 processors activated.
+CPU: All CPU(s) started in SVC mode.
+devtmpfs: initialized
+VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+pinctrl core: initialized pinctrl subsystem
+regulator-dummy: no parameters
+NET: Registered protocol family 16
+DMA: preallocated 256 KiB pool for atomic coherent allocations
+cpuidle: using governor ladder
+cpuidle: using governor menu
+Use WDOG1 as reset source
+%%%%%%%%%%%%%LIne:277 
+syscon 20c8000.anatop: regmap [mem 0x020c8000-0x020c8fff] registered
+vdd1p1: 800 <--> 1375 mV at 1100 mV 
+vdd3p0: 2800 <--> 3150 mV at 3000 mV 
+vdd2p5: 2100 <--> 2875 mV at 2500 mV 
+cpu: 725 <--> 1450 mV 
+vddpcie-phy: 725 <--> 1450 mV 
+vddsoc: 725 <--> 1450 mV 
+syscon 20e4000.iomuxc-gpr: regmap [mem 0x020e4000-0x020e7fff] registered
+syscon 21bc000.ocotp-ctrl: regmap [mem 0x021bc000-0x021bffff] registered
+syscon 21ac000.romcp: regmap [mem 0x021ac000-0x021affff] registered
+hw-breakpoint: found 5 (+1 reserved) breakpoint and 1 watchpoint registers.
+hw-breakpoint: maximum watchpoint size is 4 bytes.
+imx6sx-pinctrl 20e0000.iomuxc: initialized IMX pinctrl driver
+20dc000.gpc supply pu not found, using dummy regulator
+MU is ready for cross core communication!
+bio: create slab <bio-0> at 0
+mxs-dma 1804000.dma-apbh: initialized
+VCC_SD3: 3000 mV 
+PSU-5V0: 5000 mV 
+vref-3v3: 3300 mV 
+usb_otg1_vbus: 5000 mV 
+usb_otg2_vbus: 5000 mV 
+MPCIE_3V3: 3300 mV 
+i2c-core: driver [max17135] using legacy suspend method
+i2c-core: driver [max17135] using legacy resume method
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+usbphy_nop1.12 supply vcc not found, using dummy regulator
+i2c i2c-0: IMX I2C adapter registered
+i2c i2c-1: IMX I2C adapter registered
+i2c i2c-2: IMX I2C adapter registered
+i2c i2c-3: IMX I2C adapter registered
+Linux video capture interface: v2.00
+pps_core: LinuxPPS API ver. 1 registered
+pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+PTP clock support registered
+MIPI CSI2 driver module loaded
+Advanced Linux Sound Architecture Driver Initialized.
+Bluetooth: Core ver 2.18
+NET: Registered protocol family 31
+Bluetooth: HCI device and connection manager initialized
+Bluetooth: HCI socket layer initialized
+Bluetooth: L2CAP socket layer initialized
+Bluetooth: SCO socket layer initialized
+Switched to clocksource mxc_timer1
+cfg80211: Calling CRDA to update world regulatory domain
+NET: Registered protocol family 2
+TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+TCP bind hash table entries: 8192 (order: 4, 65536 bytes)
+TCP: Hash tables configured (established 8192 bind 8192)
+TCP: reno registered
+UDP hash table entries: 512 (order: 2, 16384 bytes)
+UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+NET: Registered protocol family 1
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+hw perfevents: enabled with ARMv7 Cortex-A9 PMU driver, 7 counters available
+Bus freq driver module loaded
+futex hash table entries: 256 (order: 2, 16384 bytes)
+VFS: Disk quotas dquot_6.5.2
+Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+NFS: Registering the id_resolver key type
+Key type id_resolver registered
+Key type id_legacy registered
+jffs2: version 2.2. (NAND) Â© 2001-2006 Red Hat, Inc.
+fuse init (API version 7.22)
+msgmni has been set to 2000
+io scheduler noop registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+imx-weim 21b8000.weim: Driver registered.
+backlight1.15 supply power not found, using dummy regulator
+backlight2.16 supply power not found, using dummy regulator
+MIPI DSI driver module loaded
+2224000.lcdif supply lcd not found, using dummy regulator
+mxsfb 2224000.lcdif: registered mxc display driver ldb
+DISPLAY: Power-on latency exceeded, new value 489333 ns
+DISPLAY: Power-off latency exceeded, new value 498000 ns
+DISPLAY: Power-on latency exceeded, new value 494333 ns
+Console: switching to colour frame buffer device 128x48
+DISPLAY: Power-off latency exceeded, new value 500000 ns
+DISPLAY: Power-on latency exceeded, new value 588333 ns
+mxsfb 2224000.lcdif: initialized
+imx-sdma 20ec000.sdma: no iram assigned, using external mem
+imx-sdma 20ec000.sdma: no event needs to be remapped
+imx-sdma 20ec000.sdma: loaded firmware 3.1
+imx-sdma 20ec000.sdma: initialized
+pfuze100-regulator 0-0008: Full layer: 2, Metal layer: 1
+pfuze100-regulator 0-0008: FAB: 0, FIN: 0
+pfuze100-regulator 0-0008: pfuze200 found.
+SW1AB: 300 <--> 1875 mV at 1175 mV 
+SW2: 800 <--> 3300 mV at 3300 mV 
+SW3A: 400 <--> 1975 mV at 1350 mV 
+SW3B: 400 <--> 1975 mV at 1350 mV 
+SWBST: 5000 <--> 5150 mV at 5000 mV 
+VSNVS: 1000 <--> 3000 mV at 3000 mV 
+VREFDDR: 750 mV 
+VGEN1: 800 <--> 1550 mV at 1200 mV 
+VGEN2: 800 <--> 1550 mV at 1500 mV 
+VGEN3: 1800 <--> 3300 mV at 2800 mV 
+VGEN4: 1800 <--> 3300 mV at 1800 mV 
+VGEN5: 1800 <--> 3300 mV at 3300 mV 
+VGEN6: 1800 <--> 3300 mV at 3000 mV 
+Serial: IMX driver
+2020000.serial: ttymxc0 at MMIO 0x2020000 (irq = 58, base_baud = 5000000) is a IMX
+console [ttymxc0] enabled
+21f4000.serial: ttymxc4 at MMIO 0x21f4000 (irq = 62, base_baud = 5000000) is a IMX
+serial: Freescale lpuart driver
+
+ 88888888888888888888888888
+major[249], minor[0]
+hello kernl
+imx sema4 driver is registered.
+[drm] Initialized drm 1.1.0 20060810
+[drm] Initialized vivante 1.0.0 20120216 on minor 0
+brd: module loaded
+loop: module loaded
+fsl-quadspi 21e4000.qspi: found mr25h256, expected n25q256a
+fsl-quadspi 21e4000.qspi: mr25h256 (32 Kbytes)
+fsl-quadspi 21e4000.qspi: unrecognized JEDEC id ffffff
+fsl-quadspi 21e4000.qspi: Freescale QuadSPI probe failed
+CAN device driver interface
+2090000.can supply xceiver not found, using dummy regulator
+flexcan 2090000.can: device registered (reg_base=c09d8000, irq=142)
+2094000.can supply xceiver not found, using dummy regulator
+flexcan 2094000.can: device registered (reg_base=c09e0000, irq=143)
+2188000.ethernet supply phy not found, using dummy regulator
+pps pps0: new PPS source ptp0
+fec 2188000.ethernet (unregistered net_device): Invalid MAC address: 00:00:00:00:00:00
+fec 2188000.ethernet (unregistered net_device): Using random MAC address: da:43:78:d5:01:eb
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 0, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 0, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0x
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 1, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 1, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 1, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xf
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0x4dd074 addr = 2, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0x4dd074 addr = 2, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0x4dd074 addr = 2, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0x4dd074 addr = 2, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0x4dd074 a
+
+ $$$$$$$$$$$$$$$$$$$ Line:196 , PHY_ID_AR8031 
+
+############### Reg[0] = 0x3100
+
+############### Reg[1] = 0x7949
+
+############### Reg[2] = 0x4d
+
+############### Reg[3] = 0xd074
+
+############### Reg[4] = 0x11e1
+
+############### Reg[5] = 0x 0
+
+############### Reg[6] = 0x 4
+
+############### Reg[7] = 0x2001
+
+############### Reg[8] = 0x 0
+
+############### Reg[9] = 0x200
+
+############### Reg[10] = 0x 0
+
+############### Reg[11] = 0x 0
+
+############### Reg[12] = 0x 0
+
+############### Reg[13] = 0x4003
+
+############### Reg[14] = 0x1000
+
+############### Reg[15] = 0xa000
+
+############### Reg[16] = 0x862
+
+############### Reg[17] = 0x10
+
+############### Reg[18] = 0x 0
+
+############### Reg[19] = 0x 0
+
+############### Reg[20] = 0x82c
+
+############### Reg[21] = 0x 0
+
+############### Reg[22] = 0x4e8
+
+############### Reg[23] = 0x 0
+
+############### Reg[24] = 0x3200
+
+############### Reg[25] = 0x3000
+
+############### Reg[26] = 0x 0
+
+############### Reg[27] = 0x600
+
+############### Reg[28] = 0x 0
+
+############### Reg[29] = 0x 5
+
+############### Reg[30] = 0x100
+
+############### Reg[31] = 0x8100
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 3, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 3, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 3, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 3, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 3, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xf
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 4, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 4, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 4, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 4, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 4, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 4, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 5, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 5, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 5, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 5, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 5, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 5, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 5, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xfff
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 6, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 6, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 6, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 6, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 6, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 6, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 6, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 6, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffff
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 7, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 7, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 7, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 7, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 7, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 7, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 7, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 7, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 7, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xfffff
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 8, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 8, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 8, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 8, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 8, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 8, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 8, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 8, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 8, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 8, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffff
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 9, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 9, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 9, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 9, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 9, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 9, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 9, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 9, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 9, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 9, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 9, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xfffffff
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 10, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id =
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 11, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 12, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 13, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0x
+
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 14, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 15, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 16, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 17, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 18, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 19, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 20, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 21, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 22, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 23, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 24, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 25, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 26, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 27, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 28, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 29, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 30, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xff
+############## bus->phy_mask = 0x 0
+
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xffffffff addr = 31, Line:332 , Fun:
+$$$$$$$$$$$$$$$$ phy_id = 0xfflibphy: fec_enet_mii_bus: probed
+fec 2188000.ethernet eth0: registered PHC device 0
+21b4000.ethernet supply phy not found, using dummy regulator
+pps pps1: new PPS source ptp1
+fec 21b4000.ethernet (unregistered net_device): Invalid MAC address: 00:00:00:00:00:00
+fec 21b4000.ethernet (unregistered net_device): Using random MAC address: da:35:15:27:c3:4b
+fec 21b4000.ethernet eth1: registered PHC device 1
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+ehci-mxc: Freescale On-Chip EHCI Host driver
+usbcore: registered new interface driver usb-storage
+2184800.usbmisc supply vbus-wakeup not found, using dummy regulator
+ci_hdrc ci_hdrc.0: EHCI Host Controller
+ci_hdrc ci_hdrc.0: new USB bus registered, assigned bus number 1
+ci_hdrc ci_hdrc.0: USB 2.0 started, EHCI 1.00
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 1 port detected
+ci_hdrc ci_hdrc.1: EHCI Host Controller
+ci_hdrc ci_hdrc.1: new USB bus registered, assigned bus number 2
+ci_hdrc ci_hdrc.1: USB 2.0 started, EHCI 1.00
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 1 port detected
+mousedev: PS/2 mouse device common for all mice
+input: 20cc000.snvs-pwrkey as /devices/soc0/soc.0/2000000.aips-bus/20cc000.snvs-pwrkey/input/input0
+snvs_pwrkey 20cc000.snvs-pwrkey: i.MX snvs powerkey probed
+egalax_ts 1-0004: Failed to read firmware version
+egalax_ts: probe of 1-0004 failed with error -110
+2-0044 supply vdd not found, using dummy regulator
+i2c-core: driver [isl29023] using legacy suspend method
+i2c-core: driver [isl29023] using legacy resume method
+snvs_rtc 20cc034.snvs-rtc-lp: rtc core: registered 20cc034.snvs-rtc-lp as rtc0
+i2c /dev entries driver
+IR NEC protocol handler initialized
+IR RC5(x) protocol handler initialized
+IR RC6 protocol handler initialized
+IR JVC protocol handler initialized
+IR Sony protocol handler initialized
+IR RC5 (streamzap) protocol handler initialized
+IR SANYO protocol handler initialized
+IR MCE Keyboard/mouse protocol handler initialized
+pxp-v4l2 pxp_v4l2_out.19: initialized
+2-000e supply vdd not found, using dummy regulator
+2-000e supply vddio not found, using dummy regulator
+mag3110 2-000e: check mag3110 chip ID
+mag3110 2-000e: read chip ID 0xffffff92 is not equal to 0xc4!
+mag3110: probe of 2-000e failed with error -22
+i2c-core: driver [mag3110] using legacy suspend method
+i2c-core: driver [mag3110] using legacy resume method
+2-001c supply vdd not found, using dummy regulator
+2-001c supply vddio not found, using dummy regulator
+mma8451 2-001c: read chip ID 0x1 is not equal to 0x1a or 0x2a!
+mma8451: probe of 2-001c failed with error -22
+imx2-wdt 20bc000.wdog: IMX2+ Watchdog Timer enabled. timeout=60s (nowayout=0)
+Bluetooth: HCI UART driver ver 2.2
+Bluetooth: HCI H4 protocol initialized
+Bluetooth: HCI BCSP protocol initialized
+Bluetooth: HCIATH3K protocol initialized
+usbcore: registered new interface driver bcm203x
+usbcore: registered new interface driver btusb
+Bluetooth: Generic Bluetooth SDIO driver ver 0.1
+usbcore: registered new interface driver ath3k
+sdhci: Secure Digital Host Controller Interface driver
+sdhci: Copyright(c) Pierre Ossman
+sdhci-pltfm: SDHCI platform and OF driver helper
+mmc1: no vqmmc regulator found
+mmc1: no vmmc regulator found
+mmc1: SDHCI controller on 2194000.usdhc [2194000.usdhc] using ADMA
+mmc2: no vqmmc regulator found
+mmc2: SDHCI controller on 2198000.usdhc [2198000.usdhc] using ADMA
+sdhci-esdhc-imx 219c000.usdhc: could not get ultra high speed state, work on normal mode
+mmc3: no vqmmc regulator found
+mmc3: no vmmc regulator found
+mmc3: SDHCI controller on 219c000.usdhc [219c000.usdhc] using ADMA
+galcore: clk_get 2d core clock failed, disable 2d/vg!
+Galcore version 5.0.11.25762
+mmc3: new high speed SDHC card at address 59b4
+mmcblk3: mmc3:59b4 SD    29.6 GiB 
+ mmcblk3: p1 p2
+caam 2100000.caam: Instantiated RNG4 SH0
+caam 2100000.caam: Instantiated RNG4 SH1
+caam 2100000.caam: device ID = 0x0a160100 (Era 4)
+caam 2100000.caam: job rings = 2, qi = 0
+caam algorithms registered in /proc/crypto
+caam_jr 2101000.jr0: registering rng-caam
+platform caam_sm: blkkey_ex: 8 keystore units available
+platform caam_sm: 64-bit clear key:
+platform caam_sm: [0000] 00 01 02 03 04 0f 06 07
+platform caam_sm: 64-bit black key:
+platform caam_sm: [0000] 1b 1c d4 07 d1 39 80 93
+platform caam_sm: [0008] 5a 8c d8 da 70 67 84 69
+platform caam_sm: 128-bit clear key:
+platform caam_sm: [0000] 00 01 02 03 04 0f 06 07
+platform caam_sm: [0008] 08 09 0a 0b 0c 0d 0e 0f
+platform caam_sm: 128-bit black key:
+platform caam_sm: [0000] f3 e1 b5 24 1f 68 50 7f
+platform caam_sm: [0008] 27 16 bc a4 6d d3 b5 7c
+platform caam_sm: 192-bit clear key:
+platform caam_sm: [0000] 00 01 02 03 04 0f 06 07
+platform caam_sm: [0008] 08 09 0a 0b 0c 0d 0e 0f
+platform caam_sm: [0016] 10 11 12 13 14 15 16 17
+platform caam_sm: 192-bit black key:
+platform caam_sm: [0000] ca ba 96 c2 a2 5e 34 7c
+platform caam_sm: [0008] 86 71 c7 2e aa 5b f6 f1
+platform caam_sm: [0016] 0c df fb 6d 8b c9 f5 e0
+platform caam_sm: [0024] 5d c1 4c 02 ff c3 99 d3
+platform caam_sm: 256-bit clear key:
+platform caam_sm: [0000] 00 01 02 03 04 0f 06 07
+platform caam_sm: [0008] 08 09 0a 0b 0c 0d 0e 0f
+platform caam_sm: [0016] 10 11 12 13 14 15 16 17
+platform caam_sm: [0024] 18 19 1a 1b 1c 1d 1e 1f
+platform caam_sm: 256-bit black key:
+platform caam_sm: [0000] 15 2a 1f 3f a3 63 bd 72
+platform caam_sm: [0008] 91 2b a1 1d 1e c8 12 bf
+platform caam_sm: [0016] 13 4e 89 de 9c 79 27 de
+platform caam_sm: [0024] d9 d6 83 02 4a 5f 94 7b
+platform caam_sm: 64-bit unwritten blob:
+platform caam_sm: [0000] 00 00 00 00 00 00 00 00
+platform caam_sm: [0008] 00 00 00 00 00 00 00 00
+platform caam_sm: [0016] 00 00 00 00 00 00 00 00
+platform caam_sm: [0024] 00 00 00 00 00 00 00 00
+platform caam_sm: [0032] 00 00 00 00 00 00 00 00
+platform caam_sm: [0040] 00 00 00 00 00 00 00 00
+platform caam_sm: [0048] 00 00 00 00 00 00 00 00
+platform caam_sm: [0056] 00 00 00 00 00 00 00 00
+platform caam_sm: [0064] 00 00 00 00 00 00 00 00
+platform caam_sm: [0072] 00 00 00 00 00 00 00 00
+platform caam_sm: [0080] 00 00 00 00 00 00 00 00
+platform caam_sm: [0088] 00 00 00 00 00 00 00 00
+platform caam_sm: 128-bit unwritten blob:
+platform caam_sm: [0000] 00 00 00 00 00 00 00 00
+platform caam_sm: [0008] 00 00 00 00 00 00 00 00
+platform caam_sm: [0016] 00 00 00 00 00 00 00 00
+platform caam_sm: [0024] 00 00 00 00 00 00 00 00
+platform caam_sm: [0032] 00 00 00 00 00 00 00 00
+platform caam_sm: [0040] 00 00 00 00 00 00 00 00
+platform caam_sm: [0048] 00 00 00 00 00 00 00 00
+platform caam_sm: [0056] 00 00 00 00 00 00 00 00
+platform caam_sm: [0064] 00 00 00 00 00 00 00 00
+platform caam_sm: [0072] 00 00 00 00 00 00 00 00
+platform caam_sm: [0080] 00 00 00 00 00 00 00 00
+platform caam_sm: [0088] 00 00 00 00 00 00 00 00
+platform caam_sm: 196-bit unwritten blob:
+platform caam_sm: [0000] 00 00 00 00 00 00 00 00
+platform caam_sm: [0008] 00 00 00 00 00 00 00 00
+platform caam_sm: [0016] 00 00 00 00 00 00 00 00
+platform caam_sm: [0024] 00 00 00 00 00 00 00 00
+platform caam_sm: [0032] 00 00 00 00 00 00 00 00
+platform caam_sm: [0040] 00 00 00 00 00 00 00 00
+platform caam_sm: [0048] 00 00 00 00 00 00 00 00
+platform caam_sm: [0056] 00 00 00 00 00 00 00 00
+platform caam_sm: [0064] 00 00 00 00 00 00 00 00
+platform caam_sm: [0072] 00 00 00 00 00 00 00 00
+platform caam_sm: [0080] 00 00 00 00 00 00 00 00
+platform caam_sm: [0088] 00 00 00 00 00 00 00 00
+platform caam_sm: 256-bit unwritten blob:
+platform caam_sm: [0000] 00 00 00 00 00 00 00 00
+platform caam_sm: [0008] 00 00 00 00 00 00 00 00
+platform caam_sm: [0016] 00 00 00 00 00 00 00 00
+platform caam_sm: [0024] 00 00 00 00 00 00 00 00
+platform caam_sm: [0032] 00 00 00 00 00 00 00 00
+platform caam_sm: [0040] 00 00 00 00 00 00 00 00
+platform caam_sm: [0048] 00 00 00 00 00 00 00 00
+platform caam_sm: [0056] 00 00 00 00 00 00 00 00
+platform caam_sm: [0064] 00 00 00 00 00 00 00 00
+platform caam_sm: [0072] 00 00 00 00 00 00 00 00
+platform caam_sm: [0080] 00 00 00 00 00 00 00 00
+platform caam_sm: [0088] 00 00 00 00 00 00 00 00
+platform caam_sm: 64-bit black key in blob:
+platform caam_sm: [0000] 9f 5e f2 78 a9 59 61 07
+platform caam_sm: [0008] f4 d6 24 21 64 8d b3 17
+platform caam_sm: [0016] cc 01 41 18 33 2c 98 a4
+platform caam_sm: [0024] a3 2c 6b 40 54 54 ee e7
+platform caam_sm: [0032] 19 91 10 37 65 a8 66 ef
+platform caam_sm: [0040] 69 2d e9 34 46 23 ef 3f
+platform caam_sm: [0048] 50 95 e0 7d f6 df 24 93
+platform caam_sm: [0056] 00 00 00 00 00 00 00 00
+platform caam_sm: [0064] 00 00 00 00 00 00 00 00
+platform caam_sm: [0072] 00 00 00 00 00 00 00 00
+platform caam_sm: [0080] 00 00 00 00 00 00 00 00
+platform caam_sm: [0088] 00 00 00 00 00 00 00 00
+platform caam_sm: 128-bit black key in blob:
+platform caam_sm: [0000] 8d 1a 0f 66 67 a4 34 3a
+platform caam_sm: [0008] 62 7f b4 b4 5f 0a fe a7
+platform caam_sm: [0016] 33 e6 d1 5b cf a6 e8 59
+platform caam_sm: [0024] 95 93 e3 15 30 58 2b 8e
+platform caam_sm: [0032] c2 fb 43 d2 eb 43 e8 b0
+platform caam_sm: [0040] bb a3 48 bb c2 be 46 79
+platform caam_sm: [0048] 27 c6 63 7e f3 26 e0 7d
+platform caam_sm: [0056] cd 62 66 fb 51 f7 cf 41
+platform caam_sm: [0064] 00 00 00 00 00 00 00 00
+platform caam_sm: [0072] 00 00 00 00 00 00 00 00
+platform caam_sm: [0080] 00 00 00 00 00 00 00 00
+platform caam_sm: [0088] 00 00 00 00 00 00 00 00
+platform caam_sm: 192-bit black key in blob:
+platform caam_sm: [0000] 98 ff 12 84 91 90 f0 e6
+platform caam_sm: [0008] 45 c8 78 a0 1b 54 e4 a3
+platform caam_sm: [0016] 9f 70 c4 56 9a c8 99 8d
+platform caam_sm: [0024] 49 be 43 a1 95 0e e5 ce
+platform caam_sm: [0032] dd a1 6f ea c9 9d 58 82
+platform caam_sm: [0040] 85 28 bc 8a b3 ef 0e 96
+platform caam_sm: [0048] 30 47 b8 c4 af 7f 7c 75
+platform caam_sm: [0056] e7 1f 8e 66 30 5f 52 99
+platform caam_sm: [0064] 1d 88 5b dc af 67 ca 9a
+platform caam_sm: [0072] 00 00 00 00 00 00 00 00
+platform caam_sm: [0080] 00 00 00 00 00 00 00 00
+platform caam_sm: [0088] 00 00 00 00 00 00 00 00
+platform caam_sm: 256-bit black key in blob:
+platform caam_sm: [0000] da 9a aa 5c 0f 6e 12 13
+platform caam_sm: [0008] 6e 3a 3e 13 1f 4e 19 3d
+platform caam_sm: [0016] 5e 7a 91 2b a4 37 25 52
+platform caam_sm: [0024] 02 c6 0f 4c b2 a0 54 c3
+platform caam_sm: [0032] 69 14 e9 be 0d ed b2 9d
+platform caam_sm: [0040] cb df 06 ad 17 e1 fd e5
+platform caam_sm: [0048] 0d 96 b5 14 18 17 06 28
+platform caam_sm: [0056] 55 84 0f 66 b5 79 4e 8b
+platform caam_sm: [0064] dc f6 46 12 ba f6 9a 98
+platform caam_sm: [0072] 9f 44 4e 20 be b2 42 8b
+platform caam_sm: [0080] 00 00 00 00 00 00 00 00
+platform caam_sm: [0088] 00 00 00 00 00 00 00 00
+platform caam_sm: restored 64-bit black key:
+platform caam_sm: [0000] 2d 74 1f 7a 72 d8 15 cc
+platform caam_sm: [0008] 32 92 3f 06 8f c3 b4 1d
+platform caam_sm: restored 128-bit black key:
+platform caam_sm: [0000] f3 e1 b5 24 1f 68 50 7f
+platform caam_sm: [0008] 27 16 bc a4 6d d3 b5 7c
+platform caam_sm: restored 192-bit black key:
+platform caam_sm: [0000] ca ba 96 c2 a2 5e 34 7c
+platform caam_sm: [0008] 86 71 c7 2e aa 5b f6 f1
+platform caam_sm: [0016] dd 26 80 c9 de 79 97 f5
+platform caam_sm: [0024] d7 f7 87 90 5c ee 27 e3
+platform caam_sm: restored 256-bit black key:
+platform caam_sm: [0000] 15 2a 1f 3f a3 63 bd 72
+platform caam_sm: [0008] 91 2b a1 1d 1e c8 12 bf
+platform caam_sm: [0016] 13 4e 89 de 9c 79 27 de
+platform caam_sm: [0024] d9 d6 83 02 4a 5f 94 7b
+snvs-secvio 20cc000.caam-snvs: violation handlers armed - non-secure state
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+wm8962 3-001a: Failed to read ID register
+wm8962: probe of 3-001a failed with error -110
+fsl-asrc 2034000.asrc: driver registered
+imx-wm8962 sound.22: failed to find codec platform device
+imx-wm8962: probe of sound.22 failed with error -22
+imx-spdif sound-spdif.23: snd-soc-dummy-dai <-> 2004000.spdif mapping ok
+NET: Registered protocol family 26
+TCP: cubic registered
+NET: Registered protocol family 10
+sit: IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+can: controller area network core (rev 20120528 abi 9)
+NET: Registered protocol family 29
+can: raw protocol (rev 20120528)
+can: broadcast manager protocol (rev 20120528 t)
+can: netlink gateway (rev 20130117) max_hops=1
+Bluetooth: RFCOMM TTY layer initialized
+Bluetooth: RFCOMM socket layer initialized
+Bluetooth: RFCOMM ver 1.11
+Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+Bluetooth: BNEP filters: protocol multicast
+Bluetooth: BNEP socket layer initialized
+Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+Bluetooth: HIDP socket layer initialized
+8021q: 802.1Q VLAN Support v1.8
+Key type dns_resolver registered
+$$SSS$$$$$$$$$$$$ Line = 331
+$$$$$$$$$$$$$$kkss Line = 310
+cpu cpu0: dev_pm_opp_get_opp_count: device OPP not found (-19)
+SWBST: disabling
+PSU-5V0: disabling
+VCC_SD3: disabling
+regulator-dummy: disabling
+imx mcc test is registered.
+input: gpio-keys.17 as /devices/soc0/gpio-keys.17/input/input2
+snvs_rtc 20cc034.snvs-rtc-lp: setting system clock to 1970-01-01 00:00:04 UTC (4)
+ALSA device list:
+  #0: imx-spdif
+kjournald starting.  Commit interval 5 seconds
+EXT3-fs (mmcblk3p2): using internal journal
+EXT3-fs (mmcblk3p2): recovery complete
+EXT3-fs (mmcblk3p2): mounted filesystem with ordered data mode
+VFS: Mounted root (ext3 filesystem) on device 179:2.
+devtmpfs: mounted
+Freeing unused kernel memory: 328K (80d14000 - 80d66000)
+INIT: version 2.88 booting
+Starting udev
+udevd[164]: starting version 182
+Unable to handle kernel NULL pointer dereference at virtual address 00000004
+pgd = a8748000
+[00000004] *pgd=a8710831, *pte=00000000, *ppte=00000000
+Internal error: Oops: 17 [#1] PREEMPT SMP ARM
+Modules linked in:
+CPU: 0 PID: 166 Comm: udevadm Not tainted 3.14.28+g91cf351 #10
+task: a81a5200 ti: a86f8000 task.ti: a86f8000
+PC is at sysfs_kf_write+0x3c/0x48
+LR is at 0xa832c510
+pc : [<80130360>]    lr : [<a832c510>]    psr: 20070013
+sp : a86f9f38  ip : 00000000  fp : 00000000
+r10: a8715ec8  r9 : a8715400  r8 : a86f9f88
+r7 : 00000000  r6 : 00000000  r5 : a8715ec0  r4 : a8715400
+r3 : 00000003  r2 : a8715400  r1 : 80d92284  r0 : a803e100
+Flags: nzCv  IRQs on  FIQs on  Mode SVC_32  ISA ARM  Segment user
+Control: 10c53c7d  Table: a874804a  DAC: 00000015
+Process udevadm (pid: 166, stack limit = 0xa86f8238)
+Stack: (0xa86f9f38 to 0xa86fa000)
+9f20:                                                       00000003 8013360c
+9f40: 00000000 00000000 a8838180 00000003 7e88bde4 a86f9f88 8000e624 a86f8000
+9f60: 00000000 800d505c 00000000 00000000 a8838180 a8838180 00000003 7e88bde4
+9f80: 8000e624 800d5644 00000000 00000000 00000000 01c98978 00000003 000313c0
+9fa0: 00000004 8000e4a0 01c98978 00000003 00000003 7e88bde4 00000003 ff000000
+9fc0: 01c98978 00000003 000313c0 00000004 0002796c 000277c4 01c93008 00000000
+9fe0: 00000000 7e88b29c 0001a11c 76e0b43c 60070010 00000003 abf58811 abf58c11
+[<80130360>] (sysfs_kf_write) from [<8013360c>] (kernfs_fop_write+0xb4/0x14c)
+[<8013360c>] (kernfs_fop_write) from [<800d505c>] (vfs_write+0xa8/0x198)
+[<800d505c>] (vfs_write) from [<800d5644>] (SyS_write+0x44/0x9c)
+[<800d5644>] (SyS_write) from [<8000e4a0>] (ret_fast_syscall+0x0/0x30)
+Code: e1a00002 e8bd8010 e59e1038 e1a02004 (e59cc004) 
+---[ end trace 43e60f7dc15f2d10 ]---
+/etc/rcS.d/S04udev: line 39:   166 Segmentation fault      udevadm trigger --action=add --subsystem-nomatch=tty --subsystem-nomatch=mem --subsystem-nomatch=vc --subsystem-nomatch=vtconsole --subsystem-nomatch=misc --subsystem-nomatch=dcon --subsystem-nomatch=pci_bus --subsystem-nomatch=graphics --subsystem-nomatch=backlight --subsystem-nomatch=video4linux $PLATFORM_BUS_NOMATCH
+bootlogd: cannot allocate pseudo tty: No such file or directory
+random: dd urandom read with 100 bits of entropy available
+ALSA: Restoring mixer settings...
+No state is present for card imxspdif
+Found hardware: "imx-spdif" "" "" "" ""
+Hardware is initialized using a generic method
+No state is present for card imxspdif
+Tue Nov 17 10:18:20 UTC 2015
+INIT: Entering runlevel: 5
+Configuring network interfaces... 
+ $$$$$$$$$$$$$$$$$$$ Line:196 , PHY_ID_AR8031 
+
+############### Reg[0] = 0x 0
+
+############### Reg[1] = 0x7949
+
+############### Reg[2] = 0x4d
+
+############### Reg[3] = 0xd074
+
+############### Reg[4] = 0x11e1
+
+############### Reg[5] = 0x 0
+
+############### Reg[6] = 0x 4
+
+############### Reg[7] = 0x2001
+
+############### Reg[8] = 0x 0
+
+############### Reg[9] = 0x200
+
+############### Reg[10] = 0x 0
+
+############### Reg[11] = 0x 0
+
+############### Reg[12] = 0x 0
+
+############### Reg[13] = 0x4003
+
+############### Reg[14] = 0x1000
+
+############### Reg[15] = 0xa000
+
+############### Reg[16] = 0x862
+
+############### Reg[17] = 0x10
+
+############### Reg[18] = 0x 0
+
+############### Reg[19] = 0x 0
+
+############### Reg[20] = 0x82c
+
+############### Reg[21] = 0x 0
+
+############### Reg[22] = 0x4e8
+
+############### Reg[23] = 0x 0
+
+############### Reg[24] = 0x3200
+
+############### Reg[25] = 0x3000
+
+############### Reg[26] = 0x 0
+
+############### Reg[27] = 0x600
+
+############### Reg[28] = 0x 0
+
+############### Reg[29] = 0x 5
+
+############### Reg[30] = 0x100
+
+############### Reg[31] = 0x8100
+fec 2188000.ethernet eth0: Freescale FEC PHY driver [Generic PHY] (mii_bus:phy_addr=2188000.ethernet:02, irq=-1)
+IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+udhcpc (v1.22.1) started
+Sending discover...
+Sending discover...
+random: nonblocking pool is initialized
+Sending discover...
+No lease, forking to background
+done.
+Starting system message bus: dbus.
+Starting rpcbind daemon...done.
+Starting advanced power management daemon: No APM support in kernel
+(failed.)
+Starting syslogd/klogd: done
+ * Starting Avahi mDNS/DNS-SD Daemon: avahi-daemon
+   ...done.
+Starting Telephony daemon
+Starting Linux NFC daemon
+
+Poky (Yocto Project Reference Distro) 1.7 imx6sxsabresd /dev/ttymxc0
+
+imx6sxsabresd login: root
+root@imx6sxsabresd:~# ifconfig 
+eth0      Link encap:Ethernet  HWaddr DA:43:78:D5:01:EB  
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+root@imx6sxsabresd:~# ifconfig eth0 down
+root@imx6sxsabresd:~# ifconfig eth0 up
+
+ $$$$$$$$$$$$$$$$$$$ Line:196 , PHY_ID_AR8031 
+
+############### Reg[0] = 0x 0
+
+############### Reg[1] = 0x7949
+
+############### Reg[2] = 0x4d
+
+############### Reg[3] = 0xd074
+
+############### Reg[4] = 0x15e1
+
+############### Reg[5] = 0x 0
+
+############### Reg[6] = 0x 4
+
+############### Reg[7] = 0x2001
+
+############### Reg[8] = 0x 0
+
+############### Reg[9] = 0x200
+
+############### Reg[10] = 0x 0
+
+############### Reg[11] = 0x 0
+
+############### Reg[12] = 0x 0
+
+############### Reg[13] = 0x4003
+
+############### Reg[14] = 0x1000
+
+############### Reg[15] = 0xa000
+
+############### Reg[16] = 0x862
+
+############### Reg[17] = 0x50
+
+############### Reg[18] = 0x 0
+
+############### Reg[19] = 0x 0
+
+############### Reg[20] = 0x82c
+
+############### Reg[21] = 0x 0
+
+############### Reg[22] = 0x4e8
+
+############### Reg[23] = 0x 0
+
+############### Reg[24] = 0x3200
+
+############### Reg[25] = 0x3000
+
+############### Reg[26] = 0x 0
+
+############### Reg[27] = 0x600
+
+############### Reg[28] = 0x 0
+
+############### Reg[29] = 0x 5
+
+############### Reg[30] = 0x100
+
+############### Reg[31] = 0x8100
+fec 2188000.ethernet eth0: Freescale FEC PHY driver [Generic PHY] (mii_bus:phy_addr=2188000.ethernet:02, irq=-1)
+IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+root@imx6sxsabresd:~# 
+root@imx6sxsabresd:~# 
+root@imx6sxsabresd:~# libphy: 2188000.ethernet:02 - Link is Up - 1000/Full
+IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+
+root@imx6sxsabresd:~# 
+root@imx6sxsabresd:~# udhcp
+udhcpc  udhcpd  
+root@imx6sxsabresd:~# udhcpc  -i eth0
+udhcpc (v1.22.1) started
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+libphy: 2188000.ethernet:02 - Link is Down
+libphy: 2188000.ethernet:02 - Link is Up - 100/Full
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+DISPLAY: Power-off latency exceeded, new value 563000 ns
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+
+
+U-Boot 2014.04 (Nov 17 2015 - 16:22:40)
+
+CPU:   Freescale i.MX6SX rev1.2 at 792 MHz
+CPU:   Temperature 29 C, calibration data: 0x59c50269
+Reset cause: POR
+Board: MX6SX SABRE SDB
+I2C:   ready
+DRAM:  1 GiB
+$$$$$$$$$$$$$$$$  Line:895   Fun:board_init
+force_idle_bus: sda=0 scl=0 sda.gp=0x3 scl.gp=0x2
+force_idle_bus: failed to clear bus, sda=1 scl=0
+$$$$$$$$$$$$$$$$  Line:0  fec_id = 614 , Fun:setup_fec
+$$$$$$$$$$$$$$$$  Line:271   Fun:board_qspi_init
+MMC:   $$$$$$$$$$$$$$$$  Line:354   Fun:board_mmc_init
+FSL_SDHC: 0, FSL_SDHC: 1, FSL_SDHC: 2
+*** Warning - bad CRC, using default environment
+
+Display: Hannstar-XGA (1024x768)
+Video: 1024x768x18
+gis input --- No input
+In:    serial
+Out:   serial
+Err:   serial
+Found PFUZE200! deviceid 0x1, revid 0x21
+$$$$$$$$$$$$$$$$  devno = 2, Line:418   Fun:board_late_mmc_init
+$$$$$$$$$$$$ Line:432, Fun:board_late_mmc_init , cmd = mmc dev 2
+mmc2 is current device
+Net:   $$$$$$$$$$$$$$ Line:482  Fun:phy_init  
+$$$$$$$$$$$$$$ Line:76  Fun:phy_atheros_init  
+$$$$$$$$$$$$Register the driver name is [AR8031/AR8033] 
+$$$$$$$$$$$$$$$$  Line:596   Fun:board_eth_init
+$$$$$$$$$$$$$$ Line:1081  Fun:fec_get_miibus  
+$$$$$$$$$$$$$$ Line:897  Fun:fec_set_dev_name  
+$$$$$$$$$$$$$$ Line:137  Fun:fec_mii_setspeed  
+$$$$$$$$$$$$$$ Line:1123  Fun:fecmxc_initialize_multi dev_id = 0 
+$$$$$$$$$$$$$ begin to find phy  phy_id = 0x 2, Line:1128 , Fun:fecmxc_initialize_multi  
+
+$$$$$$$$$$$$$$phy_mask = 0x 4  Line:841  Fun:phy_find_by_mask 
+$$$$$$$$$$$$$$ phy_mask = 0x 4, interface = 6 , Line:713  Fun:get_phy_device_by_mask  
+$$$$$$$$$$$$$$ phy_mask = 0x 4, Line:692  Fun:search_for_existing_phy
+
+ $$$$$$$$$$addr = 0x 2 
+$$$$$$$$$$$$$$ Line:701  Fun:search_for_existing_phy
+$$$$$$$$$$$$$$ Line:717  Fun:get_phy_device_by_mask  
+
+$$$$$$LIne:722 ,Func:get_phy_device_by_mask not find the exist phydev
+
+$$$$$$$$$$$$$$ phy_mask = 0x 4, Line:669  Fun:create_phy_by_mask
+
+$$$$$$$$$$$$$$DDD addr = 2 ,Line:672  Fun:create_phy_by_mask  
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:02 val:0x4d
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:03 val:0xd074
+$$$$$$$$$LIne:659, Fun:get_phy_id,  phy_id =  0x4dd074
+
+ $$$$$$$$$$$$ r = 0,phy_id = 0x4dd074, devad = -1 Line:674, Fun:create_phy_by_mask 
+
+$$$$$$$$$$$$$$$$ Line:679 , Fun:create_phy_by_mask
+
+ $$$$$$$$$$$$$$ INTERFACE = 6
+
+ $$$$$$$$$$$$$$ phy_id  = 0x4dd074
+
+ $$$$$$$$$$$$$$ addr = 0x 2
+$$$$$$$$$$$$$$ Line:605  Fun:phy_device_create
+
+$$$$$$$$$$$$$$ Line:571  Fun:get_phy_driver
+
+$$$$$$$$$$$$$$ mmd = 0, advertising = 767, Line:541  Fun:phy_probe
+$$$$$$$$$$$$$$ Line:993  Fun:fec_probe  
+$$$$$$$$$$$$$$ Line:907  Fun:fec_alloc_descs  
+$$$$$$$$$$$$$$ Line:413  Fun:fec_reg_setup  
+$$$$$$$$$$$$$$ Line:897  Fun:fec_set_dev_name  
+$$$$$$$$$$$$$$ Line:137  Fun:fec_mii_setspeed  
+
+$$$$$$$$$$$$$$ Line:1046        Fun:fec_probe
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:00 val:0x3100
+$$$$$$$$$$$$$$ Line:776  Fun:phy_reset  reg = 0x3100
+$$$$$$$$$$$$$$ Line:153  Fun:fec_mdio_write  
+$$$$$$$$$$$$$$  ddddd Line:180  Fun:fec_mdio_write: phy: 02 reg:00 val:0xb100
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:00 val:0x3100
+$$$$$$$$$$$$$$ Line:800  Fun:phy_reset  reg = 0x3100
+$$$$$$$$$$$$$$ Line:857  Fun:phy_connect_dev  
+$$$$$$$$$$$$$$ Line:904  Fun:phy_config  
+$$$$$$$$$$$$$$$$  Line:652   Fun:board_phy_config
+$$$$$$$$$$$$$$ Line:153  Fun:fec_mdio_write  
+$$$$$$$$$$$$$$  ddddd Line:180  Fun:fec_mdio_write: phy: 02 reg:1d val:0x1f
+$$$$$$$$$$$$$$ Line:153  Fun:fec_mdio_write  
+$$$$$$$$$$$$$$  ddddd Line:180  Fun:fec_mdio_write: phy: 02 reg:1e val:0x8
+$$$$$$$$$$$$$$ Line:153  Fun:fec_mdio_write  
+$$$$$$$$$$$$$$  ddddd Line:180  Fun:fec_mdio_write: phy: 02 reg:1d val:0x5
+$$$$$$$$$$$$$$ Line:153  Fun:fec_mdio_write  
+$$$$$$$$$$$$$$  ddddd Line:180  Fun:fec_mdio_write: phy: 02 reg:1e val:0x100
+$$$$$$$$$$$$$$$$$ Line = 401 , Fun:genphy_config
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:01 val:0x7949
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:0f val:0xa000
+$$$$$$$$$$$ genetic phy config Line :194
+$$$$$$$$$$ if not auto negotation ,begin to get phy speed
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:04 val:0x1de1
+$$$$$$$$$$$this is 10baseT_Half
+$$$$$$$$$$$this is 10baseT_full
+$$$$$$$$$$$this is 100baseT_Half
+$$$$$$$$$$$this is 100baseT_full
+$$$$$$$$$$$this is 1000baseT_full
+$$$$$$$$$$$$$$ Line:153  Fun:fec_mdio_write  
+$$$$$$$$$$$$$$  ddddd Line:180  Fun:fec_mdio_write: phy: 02 reg:04 val:0x11e1
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:09 val:0x200
+$$$$$$$$$$$SECOND this is 1000baseT_Half
+$$$$$$$$$$$$$$ Line:89  Fun:fec_mdio_read  
+$$$$$$$$$$$$$$yyyyyLINE:125, FUN: fec_mdio_read: phy: 02 reg:00 val:0x3100
+$$$$$$$$$$$$$$ Line:153  Fun:fec_mdio_write  
+$$$$$$$$$$$$$$  ddddd Line:180  Fun:fec_mdio_write: phy: 02 reg:00 val:0x3300
+$$$$$$$$$$$$$ uuu eth->index = 0
+
+$$$$$$$$$$$$$$ Line:1056        Fun:fec_probe
+$$$$$$$$$$$$$$ Line:380  Fun:fec_get_hwaddr  
+
+$$$$$$$$$$$$$$$$$$$$$$$CONFIG_FEC_MXC_PHYADDR  = 2   Line:603  Fun:board_eth_init
+FEC0
+Warning: failed to set MAC address
+
+Normal Boot
+Hit any key to stop autoboot:  0 
+=> env
+env - environment handling commands
+
+Usage:
+env default [-f] -a - [forcibly] reset default environment
+env default [-f] var [...] - [forcibly] reset variable(s) to their default values
+env delete [-f] var [...] - [forcibly] delete variable(s)
+env edit name - edit environment variable
+env print [-a | name ...] - print environment
+env run var [...] - run commands in an environment variable
+env save - save environment
+env set [-f] name [arg ...]
+
+=> printenv 
+baudrate=115200
+boot_fdt=try
+bootcmd=mmc dev ${mmcdev};if mmc rescan; then if run loadbootscript; then run bootscript; else if run loadimage; then run mmcboot; else run netboot; fi; fi; else run netboot; fi
+bootcmd_mfg=run mfgtool_args;bootz ${loadaddr} ${initrd_addr} ${fdt_addr};
+bootdelay=3
+bootscript=echo Running bootscript from mmc ...; source
+console=ttymxc0
+ethact=FEC0
+ethprime=FEC
+fdt_addr=0x83000000
+fdt_file=imx6sx-sdb.dtb
+fdt_high=0xffffffff
+image=zImage
+initrd_addr=0x83800000
+initrd_high=0xffffffff
+ip_dyn=yes
+loadaddr=0x80800000
+loadbootscript=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${script};
+loadfdt=fatload mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${fdt_file}
+loadimage=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${image}
+loadm4image=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${m4image}
+m4boot=sf probe 1:0; bootaux 0x78000000
+m4image=m4_qspi.bin
+mfgtool_args=setenv bootargs console=${console},${baudrate} rdinit=/linuxrc g_mass_storage.stall=0 g_mass_storage.removable=1 g_mass_storage.idVendor=0x066F g_mass_storage.idProduct=0x37FF g_mass_storage.iSerialNumber="" 
+mmcargs=setenv bootargs console=${console},${baudrate} root=${mmcroot}
+mmcautodetect=yes
+mmcboot=echo Booting from mmc ...; run mmcargs; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if run loadfdt; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+mmcdev=2
+mmcpart=1
+mmcroot=/dev/mmcblk3p2 rootwait rw
+netargs=setenv bootargs console=${console},${baudrate} root=/dev/nfs ip=dhcp nfsroot=${serverip}:${nfsroot},v3,tcp
+netboot=echo Booting from net ...; run netargs; if test ${ip_dyn} = yes; then setenv get_cmd dhcp; else setenv get_cmd tftp; fi; ${get_cmd} ${image}; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if ${get_cmd} ${fdt_addr} ${fdt_file}; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+panel=Hannstar-XGA
+script=boot.scr
+update_m4_from_sd=if sf probe 1:0; then if run loadm4image; then setexpr fw_sz ${filesize} + 0xffff; setexpr fw_sz ${fw_sz} / 0x10000; setexpr fw_sz ${fw_sz} * 0x10000; sf erase 0x0 ${fw_sz}; sf write ${loadaddr} 0x0 ${filesize}; fi; fi
+
+Environment size: 2349/8188 bytes
+=> 
+baudrate=115200
+boot_fdt=try
+bootcmd=mmc dev ${mmcdev};if mmc rescan; then if run loadbootscript; then run bootscript; else if run loadimage; then run mmcboot; else run netboot; fi; fi; else run netboot; fi
+bootcmd_mfg=run mfgtool_args;bootz ${loadaddr} ${initrd_addr} ${fdt_addr};
+bootdelay=3
+bootscript=echo Running bootscript from mmc ...; source
+console=ttymxc0
+ethact=FEC0
+ethprime=FEC
+fdt_addr=0x83000000
+fdt_file=imx6sx-sdb.dtb
+fdt_high=0xffffffff
+image=zImage
+initrd_addr=0x83800000
+initrd_high=0xffffffff
+ip_dyn=yes
+loadaddr=0x80800000
+loadbootscript=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${script};
+loadfdt=fatload mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${fdt_file}
+loadimage=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${image}
+loadm4image=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${m4image}
+m4boot=sf probe 1:0; bootaux 0x78000000
+m4image=m4_qspi.bin
+mfgtool_args=setenv bootargs console=${console},${baudrate} rdinit=/linuxrc g_mass_storage.stall=0 g_mass_storage.removable=1 g_mass_storage.idVendor=0x066F g_mass_storage.idProduct=0x37FF g_mass_storage.iSerialNumber="" 
+mmcargs=setenv bootargs console=${console},${baudrate} root=${mmcroot}
+mmcautodetect=yes
+mmcboot=echo Booting from mmc ...; run mmcargs; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if run loadfdt; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+mmcdev=2
+mmcpart=1
+mmcroot=/dev/mmcblk3p2 rootwait rw
+netargs=setenv bootargs console=${console},${baudrate} root=/dev/nfs ip=dhcp nfsroot=${serverip}:${nfsroot},v3,tcp
+netboot=echo Booting from net ...; run netargs; if test ${ip_dyn} = yes; then setenv get_cmd dhcp; else setenv get_cmd tftp; fi; ${get_cmd} ${image}; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if ${get_cmd} ${fdt_addr} ${fdt_file}; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+panel=Hannstar-XGA
+script=boot.scr
+update_m4_from_sd=if sf probe 1:0; then if run loadm4image; then setexpr fw_sz ${filesize} + 0xffff; setexpr fw_sz ${fw_sz} / 0x10000; setexpr fw_sz ${fw_sz} * 0x10000; sf erase 0x0 ${fw_sz}; sf write ${loadaddr} 0x0 ${filesize}; fi; fi
+
+Environment size: 2349/8188 bytes
+=> 
+baudrate=115200
+boot_fdt=try
+bootcmd=mmc dev ${mmcdev};if mmc rescan; then if run loadbootscript; then run bootscript; else if run loadimage; then run mmcboot; else run netboot; fi; fi; else run netboot; fi
+bootcmd_mfg=run mfgtool_args;bootz ${loadaddr} ${initrd_addr} ${fdt_addr};
+bootdelay=3
+bootscript=echo Running bootscript from mmc ...; source
+console=ttymxc0
+ethact=FEC0
+ethprime=FEC
+fdt_addr=0x83000000
+fdt_file=imx6sx-sdb.dtb
+fdt_high=0xffffffff
+image=zImage
+initrd_addr=0x83800000
+initrd_high=0xffffffff
+ip_dyn=yes
+loadaddr=0x80800000
+loadbootscript=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${script};
+loadfdt=fatload mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${fdt_file}
+loadimage=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${image}
+loadm4image=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${m4image}
+m4boot=sf probe 1:0; bootaux 0x78000000
+m4image=m4_qspi.bin
+mfgtool_args=setenv bootargs console=${console},${baudrate} rdinit=/linuxrc g_mass_storage.stall=0 g_mass_storage.removable=1 g_mass_storage.idVendor=0x066F g_mass_storage.idProduct=0x37FF g_mass_storage.iSerialNumber="" 
+mmcargs=setenv bootargs console=${console},${baudrate} root=${mmcroot}
+mmcautodetect=yes
+mmcboot=echo Booting from mmc ...; run mmcargs; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if run loadfdt; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+mmcdev=2
+mmcpart=1
+mmcroot=/dev/mmcblk3p2 rootwait rw
+netargs=setenv bootargs console=${console},${baudrate} root=/dev/nfs ip=dhcp nfsroot=${serverip}:${nfsroot},v3,tcp
+netboot=echo Booting from net ...; run netargs; if test ${ip_dyn} = yes; then setenv get_cmd dhcp; else setenv get_cmd tftp; fi; ${get_cmd} ${image}; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if ${get_cmd} ${fdt_addr} ${fdt_file}; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+panel=Hannstar-XGA
+script=boot.scr
+update_m4_from_sd=if sf probe 1:0; then if run loadm4image; then setexpr fw_sz ${filesize} + 0xffff; setexpr fw_sz ${fw_sz} / 0x10000; setexpr fw_sz ${fw_sz} * 0x10000; sf erase 0x0 ${fw_sz}; sf write ${loadaddr} 0x0 ${filesize}; fi; fi
+
+Environment size: 2349/8188 bytes
+=> 
+baudrate=115200
+boot_fdt=try
+bootcmd=mmc dev ${mmcdev};if mmc rescan; then if run loadbootscript; then run bootscript; else if run loadimage; then run mmcboot; else run netboot; fi; fi; else run netboot; fi
+bootcmd_mfg=run mfgtool_args;bootz ${loadaddr} ${initrd_addr} ${fdt_addr};
+bootdelay=3
+bootscript=echo Running bootscript from mmc ...; source
+console=ttymxc0
+ethact=FEC0
+ethprime=FEC
+fdt_addr=0x83000000
+fdt_file=imx6sx-sdb.dtb
+fdt_high=0xffffffff
+image=zImage
+initrd_addr=0x83800000
+initrd_high=0xffffffff
+ip_dyn=yes
+loadaddr=0x80800000
+loadbootscript=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${script};
+loadfdt=fatload mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${fdt_file}
+loadimage=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${image}
+loadm4image=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${m4image}
+m4boot=sf probe 1:0; bootaux 0x78000000
+m4image=m4_qspi.bin
+mfgtool_args=setenv bootargs console=${console},${baudrate} rdinit=/linuxrc g_mass_storage.stall=0 g_mass_storage.removable=1 g_mass_storage.idVendor=0x066F g_mass_storage.idProduct=0x37FF g_mass_storage.iSerialNumber="" 
+mmcargs=setenv bootargs console=${console},${baudrate} root=${mmcroot}
+mmcautodetect=yes
+mmcboot=echo Booting from mmc ...; run mmcargs; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if run loadfdt; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+mmcdev=2
+mmcpart=1
+mmcroot=/dev/mmcblk3p2 rootwait rw
+netargs=setenv bootargs console=${console},${baudrate} root=/dev/nfs ip=dhcp nfsroot=${serverip}:${nfsroot},v3,tcp
+netboot=echo Booting from net ...; run netargs; if test ${ip_dyn} = yes; then setenv get_cmd dhcp; else setenv get_cmd tftp; fi; ${get_cmd} ${image}; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if ${get_cmd} ${fdt_addr} ${fdt_file}; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+panel=Hannstar-XGA
+script=boot.scr
+update_m4_from_sd=if sf probe 1:0; then if run loadm4image; then setexpr fw_sz ${filesize} + 0xffff; setexpr fw_sz ${fw_sz} / 0x10000; setexpr fw_sz ${fw_sz} * 0x10000; sf erase 0x0 ${fw_sz}; sf write ${loadaddr} 0x0 ${filesize}; fi; fi
+
+Environment size: 2349/8188 bytes
+=> 
+baudrate=115200
+boot_fdt=try
+bootcmd=mmc dev ${mmcdev};if mmc rescan; then if run loadbootscript; then run bootscript; else if run loadimage; then run mmcboot; else run netboot; fi; fi; else run netboot; fi
+bootcmd_mfg=run mfgtool_args;bootz ${loadaddr} ${initrd_addr} ${fdt_addr};
+bootdelay=3
+bootscript=echo Running bootscript from mmc ...; source
+console=ttymxc0
+ethact=FEC0
+ethprime=FEC
+fdt_addr=0x83000000
+fdt_file=imx6sx-sdb.dtb
+fdt_high=0xffffffff
+image=zImage
+initrd_addr=0x83800000
+initrd_high=0xffffffff
+ip_dyn=yes
+loadaddr=0x80800000
+loadbootscript=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${script};
+loadfdt=fatload mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${fdt_file}
+loadimage=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${image}
+loadm4image=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${m4image}
+m4boot=sf probe 1:0; bootaux 0x78000000
+m4image=m4_qspi.bin
+mfgtool_args=setenv bootargs console=${console},${baudrate} rdinit=/linuxrc g_mass_storage.stall=0 g_mass_storage.removable=1 g_mass_storage.idVendor=0x066F g_mass_storage.idProduct=0x37FF g_mass_storage.iSerialNumber="" 
+mmcargs=setenv bootargs console=${console},${baudrate} root=${mmcroot}
+mmcautodetect=yes
+mmcboot=echo Booting from mmc ...; run mmcargs; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if run loadfdt; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+mmcdev=2
+mmcpart=1
+mmcroot=/dev/mmcblk3p2 rootwait rw
+netargs=setenv bootargs console=${console},${baudrate} root=/dev/nfs ip=dhcp nfsroot=${serverip}:${nfsroot},v3,tcp
+netboot=echo Booting from net ...; run netargs; if test ${ip_dyn} = yes; then setenv get_cmd dhcp; else setenv get_cmd tftp; fi; ${get_cmd} ${image}; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if ${get_cmd} ${fdt_addr} ${fdt_file}; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+panel=Hannstar-XGA
+script=boot.scr
+update_m4_from_sd=if sf probe 1:0; then if run loadm4image; then setexpr fw_sz ${filesize} + 0xffff; setexpr fw_sz ${fw_sz} / 0x10000; setexpr fw_sz ${fw_sz} * 0x10000; sf erase 0x0 ${fw_sz}; sf write ${loadaddr} 0x0 ${filesize}; fi; fi
+
+Environment size: 2349/8188 bytes
+=> 
+baudrate=115200
+boot_fdt=try
+bootcmd=mmc dev ${mmcdev};if mmc rescan; then if run loadbootscript; then run bootscript; else if run loadimage; then run mmcboot; else run netboot; fi; fi; else run netboot; fi
+bootcmd_mfg=run mfgtool_args;bootz ${loadaddr} ${initrd_addr} ${fdt_addr};
+bootdelay=3
+bootscript=echo Running bootscript from mmc ...; source
+console=ttymxc0
+ethact=FEC0
+ethprime=FEC
+fdt_addr=0x83000000
+fdt_file=imx6sx-sdb.dtb
+fdt_high=0xffffffff
+image=zImage
+initrd_addr=0x83800000
+initrd_high=0xffffffff
+ip_dyn=yes
+loadaddr=0x80800000
+loadbootscript=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${script};
+loadfdt=fatload mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${fdt_file}
+loadimage=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${image}
+loadm4image=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${m4image}
+m4boot=sf probe 1:0; bootaux 0x78000000
+m4image=m4_qspi.bin
+mfgtool_args=setenv bootargs console=${console},${baudrate} rdinit=/linuxrc g_mass_storage.stall=0 g_mass_storage.removable=1 g_mass_storage.idVendor=0x066F g_mass_storage.idProduct=0x37FF g_mass_storage.iSerialNumber="" 
+mmcargs=setenv bootargs console=${console},${baudrate} root=${mmcroot}
+mmcautodetect=yes
+mmcboot=echo Booting from mmc ...; run mmcargs; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if run loadfdt; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+mmcdev=2
+mmcpart=1
+mmcroot=/dev/mmcblk3p2 rootwait rw
+netargs=setenv bootargs console=${console},${baudrate} root=/dev/nfs ip=dhcp nfsroot=${serverip}:${nfsroot},v3,tcp
+netboot=echo Booting from net ...; run netargs; if test ${ip_dyn} = yes; then setenv get_cmd dhcp; else setenv get_cmd tftp; fi; ${get_cmd} ${image}; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if ${get_cmd} ${fdt_addr} ${fdt_file}; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+panel=Hannstar-XGA
+script=boot.scr
+update_m4_from_sd=if sf probe 1:0; then if run loadm4image; then setexpr fw_sz ${filesize} + 0xffff; setexpr fw_sz ${fw_sz} / 0x10000; setexpr fw_sz ${fw_sz} * 0x10000; sf erase 0x0 ${fw_sz}; sf write ${loadaddr} 0x0 ${filesize}; fi; fi
+
+Environment size: 2349/8188 bytes
+=> 
+baudrate=115200
+boot_fdt=try
+bootcmd=mmc dev ${mmcdev};if mmc rescan; then if run loadbootscript; then run bootscript; else if run loadimage; then run mmcboot; else run netboot; fi; fi; else run netboot; fi
+bootcmd_mfg=run mfgtool_args;bootz ${loadaddr} ${initrd_addr} ${fdt_addr};
+bootdelay=3
+bootscript=echo Running bootscript from mmc ...; source
+console=ttymxc0
+ethact=FEC0
+ethprime=FEC
+fdt_addr=0x83000000
+fdt_file=imx6sx-sdb.dtb
+fdt_high=0xffffffff
+image=zImage
+initrd_addr=0x83800000
+initrd_high=0xffffffff
+ip_dyn=yes
+loadaddr=0x80800000
+loadbootscript=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${script};
+loadfdt=fatload mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${fdt_file}
+loadimage=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${image}
+loadm4image=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${m4image}
+m4boot=sf probe 1:0; bootaux 0x78000000
+m4image=m4_qspi.bin
+mfgtool_args=setenv bootargs console=${console},${baudrate} rdinit=/linuxrc g_mass_storage.stall=0 g_mass_storage.removable=1 g_mass_storage.idVendor=0x066F g_mass_storage.idProduct=0x37FF g_mass_storage.iSerialNumber="" 
+mmcargs=setenv bootargs console=${console},${baudrate} root=${mmcroot}
+mmcautodetect=yes
+mmcboot=echo Booting from mmc ...; run mmcargs; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if run loadfdt; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+mmcdev=2
+mmcpart=1
+mmcroot=/dev/mmcblk3p2 rootwait rw
+netargs=setenv bootargs console=${console},${baudrate} root=/dev/nfs ip=dhcp nfsroot=${serverip}:${nfsroot},v3,tcp
+netboot=echo Booting from net ...; run netargs; if test ${ip_dyn} = yes; then setenv get_cmd dhcp; else setenv get_cmd tftp; fi; ${get_cmd} ${image}; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if ${get_cmd} ${fdt_addr} ${fdt_file}; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+panel=Hannstar-XGA
+script=boot.scr
+update_m4_from_sd=if sf probe 1:0; then if run loadm4image; then setexpr fw_sz ${filesize} + 0xffff; setexpr fw_sz ${fw_sz} / 0x10000; setexpr fw_sz ${fw_sz} * 0x10000; sf erase 0x0 ${fw_sz}; sf write ${loadaddr} 0x0 ${filesize}; fi; fi
+
+Environment size: 2349/8188 bytes
+=> 
+baudrate=115200
+boot_fdt=try
+bootcmd=mmc dev ${mmcdev};if mmc rescan; then if run loadbootscript; then run bootscript; else if run loadimage; then run mmcboot; else run netboot; fi; fi; else run netboot; fi
+bootcmd_mfg=run mfgtool_args;bootz ${loadaddr} ${initrd_addr} ${fdt_addr};
+bootdelay=3
+bootscript=echo Running bootscript from mmc ...; source
+console=ttymxc0
+ethact=FEC0
+ethprime=FEC
+fdt_addr=0x83000000
+fdt_file=imx6sx-sdb.dtb
+fdt_high=0xffffffff
+image=zImage
+initrd_addr=0x83800000
+initrd_high=0xffffffff
+ip_dyn=yes
+loadaddr=0x80800000
+loadbootscript=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${script};
+loadfdt=fatload mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${fdt_file}
+loadimage=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${image}
+loadm4image=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${m4image}
+m4boot=sf probe 1:0; bootaux 0x78000000
+m4image=m4_qspi.bin
+mfgtool_args=setenv bootargs console=${console},${baudrate} rdinit=/linuxrc g_mass_storage.stall=0 g_mass_storage.removable=1 g_mass_storage.idVendor=0x066F g_mass_storage.idProduct=0x37FF g_mass_storage.iSerialNumber="" 
+mmcargs=setenv bootargs console=${console},${baudrate} root=${mmcroot}
+mmcautodetect=yes
+mmcboot=echo Booting from mmc ...; run mmcargs; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if run loadfdt; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+mmcdev=2
+mmcpart=1
+mmcroot=/dev/mmcblk3p2 rootwait rw
+netargs=setenv bootargs console=${console},${baudrate} root=/dev/nfs ip=dhcp nfsroot=${serverip}:${nfsroot},v3,tcp
+netboot=echo Booting from net ...; run netargs; if test ${ip_dyn} = yes; then setenv get_cmd dhcp; else setenv get_cmd tftp; fi; ${get_cmd} ${image}; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if ${get_cmd} ${fdt_addr} ${fdt_file}; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+panel=Hannstar-XGA
+script=boot.scr
+update_m4_from_sd=if sf probe 1:0; then if run loadm4image; then setexpr fw_sz ${filesize} + 0xffff; setexpr fw_sz ${fw_sz} / 0x10000; setexpr fw_sz ${fw_sz} * 0x10000; sf erase 0x0 ${fw_sz}; sf write ${loadaddr} 0x0 ${filesize}; fi; fi
+
+Environment size: 2349/8188 bytes
+=> 
+baudrate=115200
+boot_fdt=try
+bootcmd=mmc dev ${mmcdev};if mmc rescan; then if run loadbootscript; then run bootscript; else if run loadimage; then run mmcboot; else run netboot; fi; fi; else run netboot; fi
+bootcmd_mfg=run mfgtool_args;bootz ${loadaddr} ${initrd_addr} ${fdt_addr};
+bootdelay=3
+bootscript=echo Running bootscript from mmc ...; source
+console=ttymxc0
+ethact=FEC0
+ethprime=FEC
+fdt_addr=0x83000000
+fdt_file=imx6sx-sdb.dtb
+fdt_high=0xffffffff
+image=zImage
+initrd_addr=0x83800000
+initrd_high=0xffffffff
+ip_dyn=yes
+loadaddr=0x80800000
+loadbootscript=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${script};
+loadfdt=fatload mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${fdt_file}
+loadimage=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${image}
+loadm4image=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${m4image}
+m4boot=sf probe 1:0; bootaux 0x78000000
+m4image=m4_qspi.bin
+mfgtool_args=setenv bootargs console=${console},${baudrate} rdinit=/linuxrc g_mass_storage.stall=0 g_mass_storage.removable=1 g_mass_storage.idVendor=0x066F g_mass_storage.idProduct=0x37FF g_mass_storage.iSerialNumber="" 
+mmcargs=setenv bootargs console=${console},${baudrate} root=${mmcroot}
+mmcautodetect=yes
+mmcboot=echo Booting from mmc ...; run mmcargs; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if run loadfdt; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+mmcdev=2
+mmcpart=1
+mmcroot=/dev/mmcblk3p2 rootwait rw
+netargs=setenv bootargs console=${console},${baudrate} root=/dev/nfs ip=dhcp nfsroot=${serverip}:${nfsroot},v3,tcp
+netboot=echo Booting from net ...; run netargs; if test ${ip_dyn} = yes; then setenv get_cmd dhcp; else setenv get_cmd tftp; fi; ${get_cmd} ${image}; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if ${get_cmd} ${fdt_addr} ${fdt_file}; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+panel=Hannstar-XGA
+script=boot.scr
+update_m4_from_sd=if sf probe 1:0; then if run loadm4image; then setexpr fw_sz ${filesize} + 0xffff; setexpr fw_sz ${fw_sz} / 0x10000; setexpr fw_sz ${fw_sz} * 0x10000; sf erase 0x0 ${fw_sz}; sf write ${loadaddr} 0x0 ${filesize}; fi; fi
+
+Environment size: 2349/8188 bytes
+=> 
+baudrate=115200
+boot_fdt=try
+bootcmd=mmc dev ${mmcdev};if mmc rescan; then if run loadbootscript; then run bootscript; else if run loadimage; then run mmcboot; else run netboot; fi; fi; else run netboot; fi
+bootcmd_mfg=run mfgtool_args;bootz ${loadaddr} ${initrd_addr} ${fdt_addr};
+bootdelay=3
+bootscript=echo Running bootscript from mmc ...; source
+console=ttymxc0
+ethact=FEC0
+ethprime=FEC
+fdt_addr=0x83000000
+fdt_file=imx6sx-sdb.dtb
+fdt_high=0xffffffff
+image=zImage
+initrd_addr=0x83800000
+initrd_high=0xffffffff
+ip_dyn=yes
+loadaddr=0x80800000
+loadbootscript=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${script};
+loadfdt=fatload mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${fdt_file}
+loadimage=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${image}
+loadm4image=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${m4image}
+m4boot=sf probe 1:0; bootaux 0x78000000
+m4image=m4_qspi.bin
+mfgtool_args=setenv bootargs console=${console},${baudrate} rdinit=/linuxrc g_mass_storage.stall=0 g_mass_storage.removable=1 g_mass_storage.idVendor=0x066F g_mass_storage.idProduct=0x37FF g_mass_storage.iSerialNumber="" 
+mmcargs=setenv bootargs console=${console},${baudrate} root=${mmcroot}
+mmcautodetect=yes
+mmcboot=echo Booting from mmc ...; run mmcargs; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if run loadfdt; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+mmcdev=2
+mmcpart=1
+mmcroot=/dev/mmcblk3p2 rootwait rw
+netargs=setenv bootargs console=${console},${baudrate} root=/dev/nfs ip=dhcp nfsroot=${serverip}:${nfsroot},v3,tcp
+netboot=echo Booting from net ...; run netargs; if test ${ip_dyn} = yes; then setenv get_cmd dhcp; else setenv get_cmd tftp; fi; ${get_cmd} ${image}; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if ${get_cmd} ${fdt_addr} ${fdt_file}; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+panel=Hannstar-XGA
+script=boot.scr
+update_m4_from_sd=if sf probe 1:0; then if run loadm4image; then setexpr fw_sz ${filesize} + 0xffff; setexpr fw_sz ${fw_sz} / 0x10000; setexpr fw_sz ${fw_sz} * 0x10000; sf erase 0x0 ${fw_sz}; sf write ${loadaddr} 0x0 ${filesize}; fi; fi
+
+Environment size: 2349/8188 bytes
+=> 
+baudrate=115200
+boot_fdt=try
+bootcmd=mmc dev ${mmcdev};if mmc rescan; then if run loadbootscript; then run bootscript; else if run loadimage; then run mmcboot; else run netboot; fi; fi; else run netboot; fi
+bootcmd_mfg=run mfgtool_args;bootz ${loadaddr} ${initrd_addr} ${fdt_addr};
+bootdelay=3
+bootscript=echo Running bootscript from mmc ...; source
+console=ttymxc0
+ethact=FEC0
+ethprime=FEC
+fdt_addr=0x83000000
+fdt_file=imx6sx-sdb.dtb
+fdt_high=0xffffffff
+image=zImage
+initrd_addr=0x83800000
+initrd_high=0xffffffff
+ip_dyn=yes
+loadaddr=0x80800000
+loadbootscript=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${script};
+loadfdt=fatload mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${fdt_file}
+loadimage=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${image}
+loadm4image=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${m4image}
+m4boot=sf probe 1:0; bootaux 0x78000000
+m4image=m4_qspi.bin
+mfgtool_args=setenv bootargs console=${console},${baudrate} rdinit=/linuxrc g_mass_storage.stall=0 g_mass_storage.removable=1 g_mass_storage.idVendor=0x066F g_mass_storage.idProduct=0x37FF g_mass_storage.iSerialNumber="" 
+mmcargs=setenv bootargs console=${console},${baudrate} root=${mmcroot}
+mmcautodetect=yes
+mmcboot=echo Booting from mmc ...; run mmcargs; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if run loadfdt; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+mmcdev=2
+mmcpart=1
+mmcroot=/dev/mmcblk3p2 rootwait rw
+netargs=setenv bootargs console=${console},${baudrate} root=/dev/nfs ip=dhcp nfsroot=${serverip}:${nfsroot},v3,tcp
+netboot=echo Booting from net ...; run netargs; if test ${ip_dyn} = yes; then setenv get_cmd dhcp; else setenv get_cmd tftp; fi; ${get_cmd} ${image}; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if ${get_cmd} ${fdt_addr} ${fdt_file}; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+panel=Hannstar-XGA
+script=boot.scr
+update_m4_from_sd=if sf probe 1:0; then if run loadm4image; then setexpr fw_sz ${filesize} + 0xffff; setexpr fw_sz ${fw_sz} / 0x10000; setexpr fw_sz ${fw_sz} * 0x10000; sf erase 0x0 ${fw_sz}; sf write ${loadaddr} 0x0 ${filesize}; fi; fi
+
+Environment size: 2349/8188 bytes
+=> 
+baudrate=115200
+boot_fdt=try
+bootcmd=mmc dev ${mmcdev};if mmc rescan; then if run loadbootscript; then run bootscript; else if run loadimage; then run mmcboot; else run netboot; fi; fi; else run netboot; fi
+bootcmd_mfg=run mfgtool_args;bootz ${loadaddr} ${initrd_addr} ${fdt_addr};
+bootdelay=3
+bootscript=echo Running bootscript from mmc ...; source
+console=ttymxc0
+ethact=FEC0
+ethprime=FEC
+fdt_addr=0x83000000
+fdt_file=imx6sx-sdb.dtb
+fdt_high=0xffffffff
+image=zImage
+initrd_addr=0x83800000
+initrd_high=0xffffffff
+ip_dyn=yes
+loadaddr=0x80800000
+loadbootscript=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${script};
+loadfdt=fatload mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${fdt_file}
+loadimage=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${image}
+loadm4image=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${m4image}
+m4boot=sf probe 1:0; bootaux 0x78000000
+m4image=m4_qspi.bin
+mfgtool_args=setenv bootargs console=${console},${baudrate} rdinit=/linuxrc g_mass_storage.stall=0 g_mass_storage.removable=1 g_mass_storage.idVendor=0x066F g_mass_storage.idProduct=0x37FF g_mass_storage.iSerialNumber="" 
+mmcargs=setenv bootargs console=${console},${baudrate} root=${mmcroot}
+mmcautodetect=yes
+mmcboot=echo Booting from mmc ...; run mmcargs; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if run loadfdt; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+mmcdev=2
+mmcpart=1
+mmcroot=/dev/mmcblk3p2 rootwait rw
+netargs=setenv bootargs console=${console},${baudrate} root=/dev/nfs ip=dhcp nfsroot=${serverip}:${nfsroot},v3,tcp
+netboot=echo Booting from net ...; run netargs; if test ${ip_dyn} = yes; then setenv get_cmd dhcp; else setenv get_cmd tftp; fi; ${get_cmd} ${image}; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if ${get_cmd} ${fdt_addr} ${fdt_file}; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+panel=Hannstar-XGA
+script=boot.scr
+update_m4_from_sd=if sf probe 1:0; then if run loadm4image; then setexpr fw_sz ${filesize} + 0xffff; setexpr fw_sz ${fw_sz} / 0x10000; setexpr fw_sz ${fw_sz} * 0x10000; sf erase 0x0 ${fw_sz}; sf write ${loadaddr} 0x0 ${filesize}; fi; fi
+
+Environment size: 2349/8188 bytes
+=> 
+baudrate=115200
+boot_fdt=try
+bootcmd=mmc dev ${mmcdev};if mmc rescan; then if run loadbootscript; then run bootscript; else if run loadimage; then run mmcboot; else run netboot; fi; fi; else run netboot; fi
+bootcmd_mfg=run mfgtool_args;bootz ${loadaddr} ${initrd_addr} ${fdt_addr};
+bootdelay=3
+bootscript=echo Running bootscript from mmc ...; source
+console=ttymxc0
+ethact=FEC0
+ethprime=FEC
+fdt_addr=0x83000000
+fdt_file=imx6sx-sdb.dtb
+fdt_high=0xffffffff
+image=zImage
+initrd_addr=0x83800000
+initrd_high=0xffffffff
+ip_dyn=yes
+loadaddr=0x80800000
+loadbootscript=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${script};
+loadfdt=fatload mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${fdt_file}
+loadimage=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${image}
+loadm4image=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${m4image}
+m4boot=sf probe 1:0; bootaux 0x78000000
+m4image=m4_qspi.bin
+mfgtool_args=setenv bootargs console=${console},${baudrate} rdinit=/linuxrc g_mass_storage.stall=0 g_mass_storage.removable=1 g_mass_storage.idVendor=0x066F g_mass_storage.idProduct=0x37FF g_mass_storage.iSerialNumber="" 
+mmcargs=setenv bootargs console=${console},${baudrate} root=${mmcroot}
+mmcautodetect=yes
+mmcboot=echo Booting from mmc ...; run mmcargs; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if run loadfdt; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+mmcdev=2
+mmcpart=1
+mmcroot=/dev/mmcblk3p2 rootwait rw
+netargs=setenv bootargs console=${console},${baudrate} root=/dev/nfs ip=dhcp nfsroot=${serverip}:${nfsroot},v3,tcp
+netboot=echo Booting from net ...; run netargs; if test ${ip_dyn} = yes; then setenv get_cmd dhcp; else setenv get_cmd tftp; fi; ${get_cmd} ${image}; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if ${get_cmd} ${fdt_addr} ${fdt_file}; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+panel=Hannstar-XGA
+script=boot.scr
+update_m4_from_sd=if sf probe 1:0; then if run loadm4image; then setexpr fw_sz ${filesize} + 0xffff; setexpr fw_sz ${fw_sz} / 0x10000; setexpr fw_sz ${fw_sz} * 0x10000; sf erase 0x0 ${fw_sz}; sf write ${loadaddr} 0x0 ${filesize}; fi; fi
+
+Environment size: 2349/8188 bytes
+=> 
+baudrate=115200
+boot_fdt=try
+bootcmd=mmc dev ${mmcdev};if mmc rescan; then if run loadbootscript; then run bootscript; else if run loadimage; then run mmcboot; else run netboot; fi; fi; else run netboot; fi
+bootcmd_mfg=run mfgtool_args;bootz ${loadaddr} ${initrd_addr} ${fdt_addr};
+bootdelay=3
+bootscript=echo Running bootscript from mmc ...; source
+console=ttymxc0
+ethact=FEC0
+ethprime=FEC
+fdt_addr=0x83000000
+fdt_file=imx6sx-sdb.dtb
+fdt_high=0xffffffff
+image=zImage
+initrd_addr=0x83800000
+initrd_high=0xffffffff
+ip_dyn=yes
+loadaddr=0x80800000
+loadbootscript=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${script};
+loadfdt=fatload mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${fdt_file}
+loadimage=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${image}
+loadm4image=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${m4image}
+m4boot=sf probe 1:0; bootaux 0x78000000
+m4image=m4_qspi.bin
+mfgtool_args=setenv bootargs console=${console},${baudrate} rdinit=/linuxrc g_mass_storage.stall=0 g_mass_storage.removable=1 g_mass_storage.idVendor=0x066F g_mass_storage.idProduct=0x37FF g_mass_storage.iSerialNumber="" 
+mmcargs=setenv bootargs console=${console},${baudrate} root=${mmcroot}
+mmcautodetect=yes
+mmcboot=echo Booting from mmc ...; run mmcargs; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if run loadfdt; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+mmcdev=2
+mmcpart=1
+mmcroot=/dev/mmcblk3p2 rootwait rw
+netargs=setenv bootargs console=${console},${baudrate} root=/dev/nfs ip=dhcp nfsroot=${serverip}:${nfsroot},v3,tcp
+netboot=echo Booting from net ...; run netargs; if test ${ip_dyn} = yes; then setenv get_cmd dhcp; else setenv get_cmd tftp; fi; ${get_cmd} ${image}; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if ${get_cmd} ${fdt_addr} ${fdt_file}; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+panel=Hannstar-XGA
+script=boot.scr
+update_m4_from_sd=if sf probe 1:0; then if run loadm4image; then setexpr fw_sz ${filesize} + 0xffff; setexpr fw_sz ${fw_sz} / 0x10000; setexpr fw_sz ${fw_sz} * 0x10000; sf erase 0x0 ${fw_sz}; sf write ${loadaddr} 0x0 ${filesize}; fi; fi
+
+Environment size: 2349/8188 bytes
+=> 
+baudrate=115200
+boot_fdt=try
+bootcmd=mmc dev ${mmcdev};if mmc rescan; then if run loadbootscript; then run bootscript; else if run loadimage; then run mmcboot; else run netboot; fi; fi; else run netboot; fi
+bootcmd_mfg=run mfgtool_args;bootz ${loadaddr} ${initrd_addr} ${fdt_addr};
+bootdelay=3
+bootscript=echo Running bootscript from mmc ...; source
+console=ttymxc0
+ethact=FEC0
+ethprime=FEC
+fdt_addr=0x83000000
+fdt_file=imx6sx-sdb.dtb
+fdt_high=0xffffffff
+image=zImage
+initrd_addr=0x83800000
+initrd_high=0xffffffff
+ip_dyn=yes
+loadaddr=0x80800000
+loadbootscript=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${script};
+loadfdt=fatload mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${fdt_file}
+loadimage=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${image}
+loadm4image=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${m4image}
+m4boot=sf probe 1:0; bootaux 0x78000000
+m4image=m4_qspi.bin
+mfgtool_args=setenv bootargs console=${console},${baudrate} rdinit=/linuxrc g_mass_storage.stall=0 g_mass_storage.removable=1 g_mass_storage.idVendor=0x066F g_mass_storage.idProduct=0x37FF g_mass_storage.iSerialNumber="" 
+mmcargs=setenv bootargs console=${console},${baudrate} root=${mmcroot}
+mmcautodetect=yes
+mmcboot=echo Booting from mmc ...; run mmcargs; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if run loadfdt; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+mmcdev=2
+mmcpart=1
+mmcroot=/dev/mmcblk3p2 rootwait rw
+netargs=setenv bootargs console=${console},${baudrate} root=/dev/nfs ip=dhcp nfsroot=${serverip}:${nfsroot},v3,tcp
+netboot=echo Booting from net ...; run netargs; if test ${ip_dyn} = yes; then setenv get_cmd dhcp; else setenv get_cmd tftp; fi; ${get_cmd} ${image}; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if ${get_cmd} ${fdt_addr} ${fdt_file}; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+panel=Hannstar-XGA
+script=boot.scr
+update_m4_from_sd=if sf probe 1:0; then if run loadm4image; then setexpr fw_sz ${filesize} + 0xffff; setexpr fw_sz ${fw_sz} / 0x10000; setexpr fw_sz ${fw_sz} * 0x10000; sf erase 0x0 ${fw_sz}; sf write ${loadaddr} 0x0 ${filesize}; fi; fi
+
+Environment size: 2349/8188 bytes
+=> 
+baudrate=115200
+boot_fdt=try
+bootcmd=mmc dev ${mmcdev};if mmc rescan; then if run loadbootscript; then run bootscript; else if run loadimage; then run mmcboot; else run netboot; fi; fi; else run netboot; fi
+bootcmd_mfg=run mfgtool_args;bootz ${loadaddr} ${initrd_addr} ${fdt_addr};
+bootdelay=3
+bootscript=echo Running bootscript from mmc ...; source
+console=ttymxc0
+ethact=FEC0
+ethprime=FEC
+fdt_addr=0x83000000
+fdt_file=imx6sx-sdb.dtb
+fdt_high=0xffffffff
+image=zImage
+initrd_addr=0x83800000
+initrd_high=0xffffffff
+ip_dyn=yes
+loadaddr=0x80800000
+loadbootscript=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${script};
+loadfdt=fatload mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${fdt_file}
+loadimage=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${image}
+loadm4image=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${m4image}
+m4boot=sf probe 1:0; bootaux 0x78000000
+m4image=m4_qspi.bin
+mfgtool_args=setenv bootargs console=${console},${baudrate} rdinit=/linuxrc g_mass_storage.stall=0 g_mass_storage.removable=1 g_mass_storage.idVendor=0x066F g_mass_storage.idProduct=0x37FF g_mass_storage.iSerialNumber="" 
+mmcargs=setenv bootargs console=${console},${baudrate} root=${mmcroot}
+mmcautodetect=yes
+mmcboot=echo Booting from mmc ...; run mmcargs; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if run loadfdt; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+mmcdev=2
+mmcpart=1
+mmcroot=/dev/mmcblk3p2 rootwait rw
+netargs=setenv bootargs console=${console},${baudrate} root=/dev/nfs ip=dhcp nfsroot=${serverip}:${nfsroot},v3,tcp
+netboot=echo Booting from net ...; run netargs; if test ${ip_dyn} = yes; then setenv get_cmd dhcp; else setenv get_cmd tftp; fi; ${get_cmd} ${image}; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if ${get_cmd} ${fdt_addr} ${fdt_file}; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+panel=Hannstar-XGA
+script=boot.scr
+update_m4_from_sd=if sf probe 1:0; then if run loadm4image; then setexpr fw_sz ${filesize} + 0xffff; setexpr fw_sz ${fw_sz} / 0x10000; setexpr fw_sz ${fw_sz} * 0x10000; sf erase 0x0 ${fw_sz}; sf write ${loadaddr} 0x0 ${filesize}; fi; fi
+
+Environment size: 2349/8188 bytes
