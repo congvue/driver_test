@@ -1,0 +1,4 @@
+kernel//home/wangyf/data/driver/ftdi/ftdi_sio.ko
+kernel//home/wangyf/data/driver/ftdi/usb-serial.ko
+kernel//home/wangyf/data/driver/ftdi/generic.ko
+kernel//home/wangyf/data/driver/ftdi/bus.ko

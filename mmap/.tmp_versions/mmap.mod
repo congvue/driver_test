@@ -1,2 +1,2 @@
-/home/wangyuanfei/data/driver_perchery/mmap/mmap.ko
-/home/wangyuanfei/data/driver_perchery/mmap/mmap.o
+/home/wangyf/data/driver/mmap/mmap.ko
+/home/wangyf/data/driver/mmap/mmap.o

@@ -1,0 +1,1 @@
+cmd_/home/launch/samba/wangyuanfei/data/dirver/pwm_driver/built-in.o :=  rm -f /home/launch/samba/wangyuanfei/data/dirver/pwm_driver/built-in.o; ar rcsD /home/launch/samba/wangyuanfei/data/dirver/pwm_driver/built-in.o

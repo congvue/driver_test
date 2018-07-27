@@ -45,11 +45,6 @@ int simple_release(struct inode *inode, struct file *filp)
 static int simple_mmap(struct file *filp, struct vm_area_struct *vma)
 {
 	int ret;
-	printk("############ Line:%d ,vma->start = %p\n",__LINE__,vma->vm_start);
-	printk("############ Line:%d ,vma->end = %p\n",__LINE__,vma->vm_end);
-	printk("############ Line:%d ,size = %d\n",__LINE__,vma->vm_end - vma->vm_start);
-	//printk("############ Line:%d ,vma->start = %p\n",__LINE__,vma->start);
-//	printk("############ Line:%d ,vma->start = %p\n",__LINE__,vma->start);
 
 	ret = remap_pfn_range(vma, vma->vm_start, virt_to_phys((void *)((unsigned long)buffer_area)) >> PAGE_SHIFT,
 		vma->vm_end - vma->vm_start, PAGE_SHARED);
@@ -60,12 +55,6 @@ remap_pfn_range和io_remap_pfn_range负责为一段物理地址建立新的页表
 
 
 */
-    printk("buf-phy:0x%8x\n",virt_to_phys((void *)(unsigned  long)buffer_area));
-	printk("############ LIne:%d Page dir= %d\n",__LINE__,virt_to_page(buffer_area));
-	printk("############ LIne:%d Page dir= %d\n",__LINE__,virt_to_pfn(buffer_area));
-
-
-    printk("########## PAGE_SHIFT = 0x%lld, buf-phy:0x%8x\n",PAGE_OFFSET, virt_to_phys((void *)(unsigned long)buffer_area) >> PAGE_SHIFT);
 
 	if(ret != 0) {
 		return -EAGAIN;
@@ -94,10 +83,7 @@ void simple_cleanup_module(void)
 
 	for(virt_addr = (unsigned long)buffer_area; virt_addr < (unsigned long)buffer_area + 4096; virt_addr += PAGE_SIZE) {
 		SetPageReserved(virt_to_page(virt_addr));
-		printk("############ LIne:%d Page dir= %d\n",__LINE__,virt_to_page(virt_addr));
 	}
-
-	
 
 	if(buffer) kfree(buffer);
 
@@ -105,8 +91,6 @@ void simple_cleanup_module(void)
 	
 
 }
-
-#define SIZE  1024 *100
 
 int simple_init_module(void)
 {
@@ -145,23 +129,16 @@ int simple_init_module(void)
 		goto out_free;
 	}
 
-	buffer = kmalloc(SIZE, GFP_KERNEL);
+	buffer = kmalloc(4096, GFP_KERNEL);
 	printk("mmap buffer = 0x%p\n",buffer);
 
-	void *buf = vmalloc(100*1024*1024);
-	printk("vmalloc buf = %p\n",buf);
-
 	buffer_area = (int *)(((unsigned long)buffer + PAGE_SIZE - 1) & PAGE_MASK);
-    
-	printk("mmap buffer22 = 0x%p\n",buffer_area);
 
-	for(virt_addr = (unsigned long)buffer_area; virt_addr < (unsigned long)buffer_area +SIZE; virt_addr += PAGE_SIZE) {
+	for(virt_addr = (unsigned long)buffer_area; virt_addr < (unsigned long)buffer_area + 4096; virt_addr += PAGE_SIZE) {
 		SetPageReserved(virt_to_page(virt_addr));//将页面设置为保留，防止被映射到用户空间的页面被swap out 出去
-		printk("############ LIne:%d Page dir= %d\n",__LINE__,virt_to_pfn(virt_addr));
 	}
 
-	memset(buffer, 'C', 1024);
-	memset(buffer_area, 'D', 1024);
+	memset(buffer, 'C', 100);
 
 	return 0;
 
